@@ -1,0 +1,11 @@
+.body {
+	width: 100%;
+	margin: .5% 0;
+	background-color: #d4d4d4;
+}
+
+p.center {
+	text-align: center;
+	font-size: 2em;
+	font-family: Verdana;
+}
