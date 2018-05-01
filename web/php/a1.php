@@ -4,6 +4,7 @@
 <style>
 	div {
 		border: 3px solid black;
+		height: 20px;
 	}
 </style>
 </head>
