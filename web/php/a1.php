@@ -3,8 +3,9 @@
 <head>
 <style>
 	div {
-		border: 3px solid black;
-		height: 20px;
+		border: 1px solid black;
+		height: 200px;
+		width: 300px;
 	}
 </style>
 </head>
@@ -12,7 +13,7 @@
 	<?php
 
   for ($x = 1; $x <= 10; $x++) {
-  	echo "<div id=\"$x\"</div>";
+  	echo "<div id=\"$x\"<p>$x</p></div>";
   }
 
 ?>
