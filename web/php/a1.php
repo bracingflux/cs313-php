@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+<style>
+	div {
+		border: 3px solid black;
+	}
+</style>
 </head>
 <body>
 	<?php
