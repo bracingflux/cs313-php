@@ -14,6 +14,16 @@
 
 <body>
 	<?php require('navbar.php');  ?>
-	
+	<div class="personalPhoto">
+		<img id="the-gal" src="../photos/the-gal.jpg" alt="the gal">
+	</div>
+	<div class="gal-text">
+		<p>That's my gal!</p>
+	</div>
+	<div class="photoItems">
+		<img src="../photos/byui.svg" alt="byui" class="photos1">
+		<img src="../photos/greaterThan.png" alt="greater than sign" class="photos1">
+		<img src="../photos/byu.svg" alt="byu" class="photos1">
+	</div>
 </body>
 </html>

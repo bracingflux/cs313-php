@@ -4,6 +4,10 @@
 	background-color: #d4d4d4;
 }
 
+body {
+	background: #d1f1ff;
+}
+
 p.center {
 	text-align: center;
 	font-size: 2em;
@@ -26,7 +30,39 @@ p.title {
     font-family: 'Galindo', cursive;
 	font-size: 2.5em;
 	min-height: 10px;
+	padding-top: 1%;
 	/*padding-left: 1%;*/
+}
+
+p.adventure {
+	text-align: center;
+	font-size: 1.4em;
+	font-family: 'Galindo', cursive;
+}
+
+div.slideshow {
+	width: 50%;
+	margin: 1% 25%;
+}
+
+div.personalPhoto {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 20%;
+	/*float: left;*/
+	margin: 1% 3%;	
+}
+
+#the-gal {
+	width: 100%;
+}
+
+div.gal-text {
+	float: left;
+	width: 20%;
+	text-align: center;
+	margin: 0 3%;
+	font-family: Verdana;
+	font-size: 1.4em;
 }
 
 li.last {
@@ -38,19 +74,35 @@ a.assignment {
 }
 
 a.assignment:hover {
-	font-size: 1.3em;
-	color: #31a1d1;
+	font-size: 1.2em;
+	color: #e8125a;
 }
 
 ul.assign {
 	list-style-type: circle;
 }
 
-.assignments {
+.photoItems {
+	clear: both;
 	width: 100%;
-	text-align: center;
+	margin: 0 35%;
+}
+
+.photos1 {
+	width: 10%;
+}
+
+.assignments {
 	font-family: Verdana;
 	font-size: 1.3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1% 37% 1% 39%;
+	padding: 1%;
+	border: 3px solid black;
+	border-radius: 6px;
+	background: #f9f9f9;
 }
 
 .full {
@@ -65,15 +117,18 @@ ul.assign {
 	color: red;
 }
 
+
 .breadcrumb {
 	width: 100%;
 	text-align: right;
-	font-family: Verdana; 
+	font-family: Verdana;
+	border-bottom: 3px solid black;
+	border-radius: 1%; 
 	/*padding-right: 0;*/
 	/*padding-left: 0;*/
 }
 
 .container {
 	width: 100%;
-	padding: 0;
+	padding: 0;	
 }
