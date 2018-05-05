@@ -16,17 +16,17 @@
 	<?php require('navbar.php');  ?>
 	<div class="assignments">
 		<ul class="assign">
-			<li><a href="#" class="assignment">Assignment 01</a></li>
-			<li><a href="#" class="assignment">Assignment 02</a></li>
-			<li><a href="#" class="assignment">Assignment 03</a></li>
-			<li><a href="#" class="assignment">Assignment 05</a></li>
-			<li><a href="#" class="assignment">Assignment 06</a></li>
-			<li><a href="#" class="assignment">Assignment 07</a></li>
-			<li><a href="#" class="assignment">Assignment 08</a></li>
-			<li><a href="#" class="assignment">Assignment 09</a></li>
-			<li><a href="#" class="assignment">Assignment 10</a></li>
-			<li><a href="#" class="assignment">Assignment 11</a></li>
-			<li><a href="#" class="assignment">Assignment 12</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 01</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 02</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 03</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 05</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 06</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 07</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 08</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 09</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 10</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 11</a></li>
+			<li><a href="a2.php" class="assignment">Assignment 12</a></li>
 		</ul>
 	</div>
 	

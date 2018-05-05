@@ -49,9 +49,9 @@
 	      </div>
 	    
 	      <div class="item">
-	        <img src="../photos/palicades.jpg" alt="Palicades">
+	        <img src="../photos/palicades.jpg" alt="Palisades">
 	        <div class="carousel-caption">
-	          <h3>The Palicades</h3>
+	          <h3>The Palisades</h3>
 	          <p>A great place to hike, camp, and explore.</p>
 	        </div>
 	      </div>
