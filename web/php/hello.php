@@ -15,7 +15,7 @@
 <body>
 	<?php require('navbar.php');  ?>
 	<div class="personalPhoto">
-		<img id="the-gal" src="../photos/the-gal.jpg" alt="the gal">
+		<img id="the-gal" src="../photos/the-gal.JPG" alt="the gal">
 	</div>
 	<div class="gal-text">
 		<p>That's my gal!</p>
