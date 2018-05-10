@@ -1,0 +1,28 @@
+p.itemHat {
+	width: 80%;
+	/*float: left;*/
+}
+
+.totalItems {
+	width: 100%;
+}
+
+.shared {
+	/*width: 100%;*/
+	text-align: left;
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: 1.5%;
+	width: 50%;
+	margin: .5% 25%;
+}
+
+button.addCart {
+	float: right;
+	margin: 10% 2%;
+}
+
+h3 {
+	text-align: center;
+	margin: 1.5%;
+}
