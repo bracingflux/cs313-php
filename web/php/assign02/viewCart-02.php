@@ -20,20 +20,23 @@
 	 ?>
 
 	<div class="container-fluid" style="margin-top:80px">
-	<!-- <p class=""></p> -->
 	  <h3>Your Cart</h3>	  
 	  <div class="totalItems">
 		  <?php
-		  $hatsCart = $_SESSION['hats']; 
-		  	foreach ($hats as $hat) {
-		  		$counts = array_count_values($hatsCart);		  		
-		  		$name2 = trim(preg_replace('/\s\s+/', ' ', $hat->name));		  		
-		  		if (array_search($name2, $hatsCart)) {
-		  			$totalPurchased = $counts[$name2];
-		  			echo "<div class='shared'><div class='quantity'><button onclick='removeFromCart('$name2')'>Remove</button><br><span id='quan'>Quantity: $totalPurchased</span></div>
-		  			<p class='itemHat'>Name: $hat->name<br> Description: $hat->description<br> Price: $$hat->price</p></div>";
-		  		}		  		
-		  	}
+		  if (isset($_SESSION['hats'])) {
+			$hatsCart = $_SESSION['hats']; 
+			foreach ($hats as $hat) {
+				$counts = array_count_values($hatsCart);		  		
+				$name2 = trim(preg_replace('/\s\s+/', ' ', $hat->name));
+						  		
+				if (in_array($name2, $hatsCart)) {
+					$totalPurchased = $counts[$name2];
+					echo "<div class='shared'><div class='quantity'><button onclick='removeFromCart('$name2')'>Remove</button><br><span id='quan'>Quantity: $totalPurchased</span></div>
+					<p class='itemHat'>Name: $hat->name<br> Description: $hat->description<br> Price: $$hat->price</p></div>";
+				}						  		
+			}		  	
+		  }		  
+		  
 		   ?>
 	   </div>
 	</div>

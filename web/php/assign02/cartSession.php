@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if (isset($_SESSION['hats'])) {
+	if (isset($_SESSION['hats'])) {	
 		$hats = $_SESSION['hats'];
 		foreach ($_POST as $key => $value) {
 			array_push($hats, $value);

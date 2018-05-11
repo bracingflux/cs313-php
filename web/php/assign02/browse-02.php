@@ -15,13 +15,11 @@
   <title>Browse Hats</title> 
 </head>
 <body>
-	<!-- <p>This will be a future assignment. Thanks for stopping by.</p> -->
 	<?php require('navbar-02.php');
 		require('hatsFile.php');		
 	 ?>
 
 	<div class="container-fluid" style="margin-top:80px">
-	<!-- <p class=""></p> -->
 	  <h3>Select Your Hat of Choice!</h3>	  
 	  <div class="totalItems">
 		  <?php 

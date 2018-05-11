@@ -4,7 +4,7 @@ function itemToCart(obj) {
          type: "POST",
          url: "cartSession.php",
          data: "name=" + name1,
-         success: function(msg){
+         success: function(msg){         	
                      // console.log("Recieved cart item(s): " + msg);
                   }
     });
