@@ -109,7 +109,7 @@ function checkZip() {
         return false;
     }
     else {
-        var pattern = new RegExp(/^[0-9]*$/);
+        var pattern = new RegExp(/^[0-9\s-]*$/);
         var valid = pattern.test(zip);
         if (valid) {
             document.getElementById('invalZip').style.display = "none";
