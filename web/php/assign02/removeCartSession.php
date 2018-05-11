@@ -12,15 +12,7 @@
 		}
 	}
 	else {
-		echo "Session not started..";
-		console.log("Session not set.");
-		/*$hats = Array();
-
-		foreach ($_POST as $key => $value) {
-				array_push($hats, $value);
-			}
-
-		$_SESSION['hats'] = $hats;	*/
+		echo "Session not started..";			
 	}
 		
 ?>

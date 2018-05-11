@@ -65,6 +65,77 @@ button.removeCart:hover {
     opacity: 0.85;
 }
 
+p.instruction {
+	clear: both;
+	float: left;
+	width: 46%;
+	text-align: right;
+}
+
+#info {
+	text-align: center;
+}
+
+input.right {
+	width: 50%;
+	float: right;
+}
+
+#checkoutForm {
+	text-align: center;
+	width: 40%;
+	margin: 2% 25% 2% 25%;
+}
+
+.invalid {
+	color: red;
+	clear: both;
+	display: none;
+	/*margin: 0;*/
+	/*padding: 0;*/
+}
+
+button.checkoutButton {
+	float: right;
+	background-color: #2daf65;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button.checkoutButton:hover {
+    opacity: 0.85;
+}
+
+div.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2% 35% 3% 35%;
+}
+
+.totalPrice {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+
+div.center1 {
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 3% 20% 4% 60%;
+}
+
+#priceNum {
+	width: 100%;
+	margin: 2% 0 1% 0;
+	text-align: center;
+}
 
 h3 {
 	text-align: center;
