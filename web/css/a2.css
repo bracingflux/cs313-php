@@ -7,6 +7,16 @@ p.itemHat {
 	width: 100%;
 }
 
+div.quantity {
+	float: right;
+	margin: 7% 2%;
+	width: auto;
+}
+
+#quan {
+	/*padding: 4% 0;*/
+}
+
 .shared {
 	/*width: 100%;*/
 	text-align: left;

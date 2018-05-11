@@ -2,10 +2,10 @@
   <a class="navbar-brand" href="#">Hats</a>
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Browse Hats</a>
+      <a class="nav-link" href="browse-02.php">Browse Hats</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">View Cart</a>
+      <a class="nav-link" href="viewCart-02.php">View Cart</a>
     </li>
   </ul>
 </nav>

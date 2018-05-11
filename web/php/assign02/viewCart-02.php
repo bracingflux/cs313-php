@@ -12,22 +12,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../../javascript/a2.js" ></script>
   <link rel="stylesheet" type="text/css" href="../../css/a2.css">
-  <title>Browse Hats</title> 
+  <title>View Cart</title> 
 </head>
 <body>
-	<!-- <p>This will be a future assignment. Thanks for stopping by.</p> -->
 	<?php require('navbar-02.php');
 		require('hatsFile.php');		
 	 ?>
 
 	<div class="container-fluid" style="margin-top:80px">
 	<!-- <p class=""></p> -->
-	  <h3>Select Your Hat of Choice!</h3>	  
+	  <h3>Your Cart</h3>	  
 	  <div class="totalItems">
-		  <?php 
+		  <?php
+		  $hatsCart = $_SESSION['hats']; 
 		  	foreach ($hats as $hat) {
-		  		$name2 = trim(preg_replace('/\s\s+/', ' ', $hat->name));
-		  		echo "<div class='shared'><button onclick=\"itemToCart('$name2')\" class=\"addCart\">Add to Cart</button><p class=\"itemHat\">Name: $hat->name<br> Description: $hat->description<br> Price: $$hat->price</p></div>";
+		  		$counts = array_count_values($hatsCart);		  		
+		  		$name2 = trim(preg_replace('/\s\s+/', ' ', $hat->name));		  		
+		  		if (array_search($name2, $hatsCart)) {
+		  			$totalPurchased = $counts[$name2];
+		  			echo "<div class='shared'><div class='quantity'><button onclick='removeFromCart('$name2')'>Remove</button><br><span id='quan'>Quantity: $totalPurchased</span></div>
+		  			<p class='itemHat'>Name: $hat->name<br> Description: $hat->description<br> Price: $$hat->price</p></div>";
+		  		}		  		
 		  	}
 		   ?>
 	   </div>
