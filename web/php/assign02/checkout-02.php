@@ -19,7 +19,7 @@
 
 	<div class="container-fluid" style="margin-top:80px">
 		<p id="info">Please enter the following information:</p>	
-		<form action="" id="checkoutForm" method="post" onsubmit="return validate()">
+		<form action="confirmation-02.php" id="checkoutForm" method="post" onsubmit="return validate()">
 			<p class="instruction">First and last name:</p>
 			<input class="right" type="text" id="username1" name="username" onblur="checkName()">
 			<p id="invalName" class="invalid">First and last must be letters only.</p>			

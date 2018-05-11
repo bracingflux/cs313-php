@@ -76,6 +76,15 @@ p.instruction {
 	text-align: center;
 }
 
+.info {
+	text-align: center;
+	border: 2px solid black;
+	padding: 1%;
+	width: 20%;
+	margin: 1% 40%;
+	border-radius: 2px;
+}
+
 input.right {
 	width: 50%;
 	float: right;
