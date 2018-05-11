@@ -25,7 +25,7 @@
 		  <?php 
 		  	foreach ($hats as $hat) {
 		  		$name2 = trim(preg_replace('/\s\s+/', ' ', $hat->name));
-		  		echo "<div class='shared'><button onclick=\"itemToCart('$name2')\" class=\"addCart\">Add to Cart</button><p class=\"itemHat\">Name: $hat->name<br> Description: $hat->description<br> Price: $$hat->price</p></div>";
+		  		echo "<div class='shared'><button id=\"$name2\" onclick=\"itemToCart('$name2')\" class=\"addCart\">Add to Cart</button><p class=\"itemHat\">Name: $hat->name<br> Description: $hat->description<br> Price: $$hat->price</p></div>";
 		  	}
 		   ?>
 	   </div>

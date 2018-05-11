@@ -1,5 +1,5 @@
 p.itemHat {
-	width: 80%;
+	width: 75%;
 	/*float: left;*/
 }
 
@@ -11,6 +11,12 @@ div.quantity {
 	float: right;
 	margin: 7% 2%;
 	width: auto;
+}
+
+#emptyCart {
+	text-align: center;
+	font-size: 1.5em;
+	margin: 10%;
 }
 
 #quan {
@@ -29,8 +35,36 @@ div.quantity {
 
 button.addCart {
 	float: right;
-	margin: 10% 2%;
+	margin: 8% 4%;
+	background-color: #60a5f7;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+button.addCart:hover {
+    opacity: 0.85;
+}
+
+button.removeCart {
+	float: right;
+	margin: 8% 4%;
+	background-color: #ee6767;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: none; 
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button.removeCart:hover {
+    opacity: 0.85;
+}
+
 
 h3 {
 	text-align: center;
