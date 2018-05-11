@@ -16,8 +16,8 @@
 	<?php require('navbar.php');  ?>
 	<div class="assignments">
 		<ul class="assign">
-			<li><a href="a2.php" class="assignment">Assignment 01</a></li>
-			<li><a href="a2.php" class="assignment">Assignment 02</a></li>
+			<li><a href="hello.php" class="assignment">Assignment 01</a></li>
+			<li><a href="assign02/browse-02.php" class="assignment">Assignment 02</a></li>
 			<li><a href="a2.php" class="assignment">Assignment 03</a></li>
 			<li><a href="a2.php" class="assignment">Assignment 05</a></li>
 			<li><a href="a2.php" class="assignment">Assignment 06</a></li>
