@@ -13,6 +13,7 @@
          $book = "";
          if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $book = test_input($_POST["book"]);
+            echo "<p>HERE IS THE BOOK: $book</p>";
          }
 
          function test_input($data) {
