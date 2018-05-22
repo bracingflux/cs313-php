@@ -6,7 +6,10 @@
 	<p>Hello!</p>
 	<?php 
 		$dbUrl = getenv('DATABASE_URL');
-
+		echo "dbUrl: $dbUrl";
+		if (empty($dbUrl)) {
+			echo "it's empty";
+		}
 		$dbopts = parse_url($dbUrl);
 
 		$dbHost = $dbopts["ec2-23-23-130-158.compute-1.amazonaws.com"];
@@ -19,14 +22,14 @@
 		{
 			// $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-			echo "<p>db set</p>";
 			$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+			echo "<p>db set</p>";
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			foreach ($db->query('SELECT name, description FROM root_beers') as $row) {
+			/*foreach ($db->query('SELECT name, description FROM root_beers') as $row) {
 				echo "Root Beer name: " . $row['name'];
 				echo "Description: " . $row['description'];
 				echo "<br>";
-			}
+			}*/
 			echo "<p>Items should have printed</p>";
 		}
 		catch(PDOException $ex) {
