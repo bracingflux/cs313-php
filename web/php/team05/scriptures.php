@@ -30,7 +30,7 @@
          $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
          foreach ($db->query('SELECT book, chapter, verse, content FROM scripture') as $row) {
-            echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "<strong> - \"" . $row['content'] . "\"</p><br>";
+            echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><br>";
          }
       }
       catch(PDOException $ex) {
