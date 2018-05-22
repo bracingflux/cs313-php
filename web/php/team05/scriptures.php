@@ -72,9 +72,10 @@
       </div>
       <input type="submit" name="submit" value="submit"/>
     </form>
-    <?php foreach ($db->query("SELECT book, chapter, verse, content FROM scripture WHERE book= $book") as $row) {
+    <?php foreach ($db->query("SELECT book, chapter, verse, content FROM scripture WHERE book= \'$book\'") as $row) {
             echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><br>";
-         } ?>
+         } 
+      ?>
 
    </div>
 </body>
