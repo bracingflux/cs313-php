@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+<head>	
+</head>
+<body>
 	<?php 
 		try
 		{
@@ -29,7 +31,5 @@
 		}
 		
 	?>
-</head>
-<body>
 </body>
 </html>
