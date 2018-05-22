@@ -3,6 +3,7 @@
 <head>	
 </head>
 <body>
+	<p>Hello!</p>
 	<?php 
 		try
 		{
