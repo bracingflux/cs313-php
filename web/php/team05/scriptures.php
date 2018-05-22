@@ -7,9 +7,12 @@
 <body>
    <h1>Scripture Resources</h1>
    <?php 
-      $dbUrl = getenv('DATABASE_URL');    
+      $dbUrl = getenv('HEROKU_POSTGRESQL_AMBER_URL');    
       if (empty($dbUrl)) {
          $dbUrl = "postgres://hmufjxaoraveoi:8004b598443a41c86155a553beab2246b64842706de2c90402b37824e1889767@ec2-23-23-130-158.compute-1.amazonaws.com:5432/d7llnf8glafh95";
+      }
+      else {
+         echo "<h2>Not Empty!</p>";
       }
       $dbopts = parse_url($dbUrl);
 
@@ -18,15 +21,15 @@
       $mUser = "hmufjxaoraveoi";
       $mPass = "8004b598443a41c86155a553beab2246b64842706de2c90402b37824e1889767";
 
-      $dbHost = $dbopts["ec2-23-23-130-158.compute-1.amazonaws.com"];
-      $dbPort = $dbopts["5432"];
-      $dbUser = $dbopts["hmufjxaoraveoi"];
-      $dbPassword = $dbopts["8004b598443a41c86155a553beab2246b64842706de2c90402b37824e1889767"];
+      $dbHost = $dbopts["host"];
+      $dbPort = $dbopts["port"];
+      $dbUser = $dbopts["user"];
+      $dbPassword = $dbopts["pass"];
       $dbName = ltrim($dbopts["path"],'/');
       try
       {
 
-         $db = new PDO("pgsql:host=$mHost;port=$mPort;dbname=$dbName", $mUser, $mPass);
+         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
          $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
          foreach ($db->query('SELECT book, chapter, verse, content FROM scripture') as $row) {
