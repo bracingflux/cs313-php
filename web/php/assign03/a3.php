@@ -13,18 +13,21 @@
 		echo "dbUrl: $dbUrl";
 		$dbopts = parse_url($dbUrl);
 
+		$mHost = "ec2-23-23-130-158.compute-1.amazonaws.com";
+		$mPort = "5432";
+
 		$dbHost = $dbopts["ec2-23-23-130-158.compute-1.amazonaws.com"];
 		$dbPort = $dbopts["5432"];
 		$dbUser = $dbopts["hmufjxaoraveoi"];
 		$dbPassword = $dbopts["8004b598443a41c86155a553beab2246b64842706de2c90402b37824e1889767"];
 		$dbName = ltrim($dbopts["path"],'/');
 		echo "<p>Working..</p>";
-		print "<p>pgsql:host=$dbHost;port=$dbPort;dbname=$dbName</p>\n\n";
+		print "<p>pgsql:host=$mHost;port=$mPort;dbname=$dbName User: $dbUser Pass: $dbPassword</p>\n\n";
 		try
 		{
 			// $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-			$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+			$db = new PDO("pgsql:host=$mHost;port=$mPort;dbname=$dbName", $dbUser, $dbPassword);
 			echo "<p>db set</p>";
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			/*foreach ($db->query('SELECT name, description FROM root_beers') as $row) {
