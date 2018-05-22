@@ -17,7 +17,8 @@
 		echo "<p>Working..</p>";
 		try
 		{
-			$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+			// $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+			$db = new PDO("pgsql:    ec2-23-23-130-158.compute-1.amazonaws.com;port=5432;dbname=    d7llnf8glafh95", "hmufjxaoraveoi", "8004b598443a41c86155a553beab2246b64842706de2c90402b37824e1889767");
 			echo "<p>db set</p>";
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			foreach ($db->query('SELECT name, description FROM root_beers') as $row) {
