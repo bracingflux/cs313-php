@@ -11,16 +11,8 @@
       if (empty($dbUrl)) {
          $dbUrl = "postgres://hmufjxaoraveoi:8004b598443a41c86155a553beab2246b64842706de2c90402b37824e1889767@ec2-23-23-130-158.compute-1.amazonaws.com:5432/d7llnf8glafh95";
       }
-      else {
-         echo "<h2>Not Empty!</p>";
-      }
+      
       $dbopts = parse_url($dbUrl);
-
-      $mHost = "ec2-23-23-130-158.compute-1.amazonaws.com";
-      $mPort = "5432";
-      $mUser = "hmufjxaoraveoi";
-      $mPass = "8004b598443a41c86155a553beab2246b64842706de2c90402b37824e1889767";
-
       $dbHost = $dbopts["host"];
       $dbPort = $dbopts["port"];
       $dbUser = $dbopts["user"];
