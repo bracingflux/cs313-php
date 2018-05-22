@@ -5,11 +5,12 @@
 <body>
 	<p>Hello!</p>
 	<?php 
-		$dbUrl = getenv('DATABASE_URL');
-		echo "dbUrl: $dbUrl";
+		$dbUrl = getenv('DATABASE_URL');		
 		if (empty($dbUrl)) {
 			echo "it's empty";
+			$dbUrl = "postgres://hmufjxaoraveoi:8004b598443a41c86155a553beab2246b64842706de2c90402b37824e1889767@ec2-23-23-130-158.compute-1.amazonaws.com:5432/d7llnf8glafh95";
 		}
+		echo "dbUrl: $dbUrl";
 		$dbopts = parse_url($dbUrl);
 
 		$dbHost = $dbopts["ec2-23-23-130-158.compute-1.amazonaws.com"];
