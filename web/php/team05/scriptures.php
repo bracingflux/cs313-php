@@ -77,7 +77,8 @@
          $stmt->execute(array(':book' => $book));
          $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
          foreach ($rows as $row) {
-            echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><br>";
+            echo "$row";
+            // echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><br>";
             
          }
          /*foreach ($db->query("SELECT book, chapter, verse, content FROM scripture WHERE book = $book") as $row) {
