@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>	
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Database Query</title>	
 </head>
 <body>
-	<p>Hello!</p>
+	<p>Hello! This is a database query page!</p>
 	<?php 
 		$dbUrl = getenv('DATABASE_URL');		
 		if (empty($dbUrl)) {
@@ -32,10 +34,10 @@
 			$db = new PDO("pgsql:host=$mHost;port=$mPort;dbname=$dbName", $mUser, $mPass);
 			echo "<p>db set</p>";
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			foreach ($db->query('SELECT name, description, type, brand FROM root_beers') as $row) {
-				echo "Name: " . $row['name'] . "<br>";
-				echo "Description: " . $row['description'] . "<br>";
-				echo "Type: " $row["type"] . "<br>" . "Brand: " $row["brand"] . "<br>"; 
+			foreach ($db->query('SELECT name, description FROM root_beers') as $row) {
+				echo "Root Beer name: " . $row['name'];
+				echo "Description: " . $row['description'];
+				echo "<br>";
 			}
 			echo "<p>Items should have printed</p>";
 		}
