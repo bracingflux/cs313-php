@@ -2,6 +2,9 @@
 <html lang="en-US">
 <head>
    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <title>Scripture Resources</title> 
 </head>
 <body>
@@ -36,5 +39,27 @@
       
       
    ?>
+   <div class="container">
+
+    <h2>Form control: select</h2>
+
+    <p>The form below contains two dropdown menus (select lists):</p>
+
+    <form>
+
+      <div class="form-group">
+        <select class="form-control" id="sel1">
+        <?php 
+            foreach ($db->query('SELECT book FROM scripture') as $row) {
+               echo "<option>" . $row['book'] . "</option>";
+            } 
+         ?>          
+        </select>
+        <br>
+      </div>
+
+    </form>
+
+   </div>
 </body>
 </html>
