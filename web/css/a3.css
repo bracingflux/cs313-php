@@ -81,10 +81,9 @@ div.rbItem {
 }
 
 #rbPhoto {
-	width: 12%;
+	width: 15%;
 	float: left;
 	margin: 2%;
-	background: purple;
 }
 
 #rbName {
@@ -92,7 +91,6 @@ div.rbItem {
 	float: right;
 	color: white;
 	font-size: 1.1em;
-	background: orange;
 	font-family: Verdana;
 	text-align: center;
 	margin: 15% 5%; 
