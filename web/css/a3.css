@@ -38,7 +38,7 @@ p.def {
 
 div.rb_photo {
 	width: 10%;
-	margin: 1% auto;
+	margin: 1% 1% 1% 25%;
 	float: left;
 	clear: both;
 }
@@ -50,7 +50,7 @@ div.row {
 
 div.rb_item {
 	width: 15%;
-	margin: 3% 25%;
+	margin: 3% 30% 3% 5%;
 	float: right;
 	background-color: #5b3a3a;
 	border: 4px solid #c3a2a2; 
