@@ -82,11 +82,13 @@ div.rbItem {
 div.rbPhoto {
 	width: 10%;
 	float: left;
+	background: purple;
 }
 
 div.rbName {
 	width: 20%;
 	float: right;
 	color: white;
-	clear: both;
+	background: orange;
+	/*clear: both;*/
 }
