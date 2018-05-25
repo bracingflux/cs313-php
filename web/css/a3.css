@@ -85,6 +85,7 @@ div.rbItem {
 	max-height: 180px;
 	float: left;
 	margin: 1% 1% 2% 3%;
+	background: yellow;
 }
 
 #rbName {
@@ -94,6 +95,7 @@ div.rbItem {
 	font-size: 1.1em;
 	font-family: Verdana;
 	text-align: center;
-	margin: 25% 1%; 
+	margin: 25% 1%;
+	background: orange; 
 	/*clear: both;*/
 }
