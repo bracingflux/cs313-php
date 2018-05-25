@@ -6,17 +6,6 @@ body {
 	border-radius: 13px;
 }
 
-div.rb_item {
-	width: 15%;
-	margin: 1% 50% 1% 5%;
-	float: right;
-	background-color: #5b3a3a;
-	border: 4px solid #c3a2a2; 
-	border-radius: 13px; 
-	padding: .8%;
-	clear: both;  
-}
-
 p.white {
 	color: white;
 	margin-right: auto;
@@ -54,4 +43,16 @@ div.rb_photo {
 
 div.row {
 	width: 100%;
+	background: blue;
+}
+
+div.rb_item {
+	width: 15%;
+	/*margin: 1% 50% 1% 5%;*/
+	float: right;
+	background-color: #5b3a3a;
+	border: 4px solid #c3a2a2; 
+	border-radius: 13px; 
+	padding: .8%;
+	/*clear: both;  */
 }
