@@ -8,10 +8,11 @@ body {
 
 p.white {
 	color: white;
-	margin-right: auto;
-	margin-left: auto;
+	/*margin-right: auto;
+	margin-left: auto;*/
 	font-size: 1.12em;
-	font-family: Verdana;	
+	font-family: Verdana;
+	float: right;	
 }
 
 img.center {
@@ -21,6 +22,15 @@ img.center {
     width: 40%;
     overflow: hidden;
     height: 2%; 
+}
+
+img.center_photo {
+	display: block;
+    margin-right: auto;
+    width: 5%;
+    overflow: hidden;
+    float: left;
+    /*height: 2%; */
 }
 
 p.def {
