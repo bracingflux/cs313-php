@@ -80,7 +80,7 @@ div.rbItem {
 	min-height: 200px;
 }
 
-#rbPhoto {
+.rbPhoto {
 	/*width: 22%;*/
 	max-height: 180px;
 	max-width: 70px;
@@ -88,7 +88,7 @@ div.rbItem {
 	margin: 1% 1% 2% 3%;
 }
 
-#rbName {
+.rbName {
 	width: 70%;
 	float: right;
 	color: white;

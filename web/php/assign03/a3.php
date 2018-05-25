@@ -41,13 +41,13 @@
 	  </form>
 	</div>
 
-	<button id="create-user">Create new user</button>
+	<button id="rb-item">More Info</button>
 	<?php
 	require('load_db.php');
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
-		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
-		echo "<p id='rbName'>" . $row['name'] ."</p></div>";		
+		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" class='rbPhoto' alt='" . $row['name'] . "'>";
+		echo "<p class='rbName'>" . $row['name'] ."</p></div>";		
 	}		
 	?>
 </body>
