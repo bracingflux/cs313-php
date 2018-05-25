@@ -39,6 +39,7 @@ p.def {
 div.rb_photo {
 	width: 10%;
 	float: left;
+	clear: both;
 }
 
 div.row {
@@ -53,6 +54,5 @@ div.rb_item {
 	background-color: #5b3a3a;
 	border: 4px solid #c3a2a2; 
 	border-radius: 13px; 
-	padding: .8%;
-	/*clear: both;  */
+	padding: .8%;	  
 }
