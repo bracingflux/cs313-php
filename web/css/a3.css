@@ -10,6 +10,7 @@ p.white {
 	color: white;
 	/*margin-right: auto;
 	margin-left: auto;*/
+	width: 30%;
 	font-size: 1.12em;
 	font-family: Verdana;
 	float: right;	
@@ -25,12 +26,13 @@ img.center {
 }
 
 img.center_photo {
-	display: block;
-    margin-right: auto;
-    max-width: 100px;
+	/*display: block;*/
+    /*margin-right: auto;*/
+    /*max-width: 100px;*/
     overflow: hidden;
     float: left;
-    height: 20px; 
+    width: 30%;
+    height: 100px; 
 }
 
 p.def {
