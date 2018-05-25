@@ -7,8 +7,9 @@ body {
 }
 
 div.rb_item {
-	width: 50%;
+	width: 15%;
 	margin: 1% 25%;
+	float: right;
 	background-color: #5b3a3a;
 	border: 4px solid #c3a2a2; 
 	border-radius: 13px; 
@@ -46,5 +47,6 @@ p.def {
 }
 
 div.rb_photo {
-	width: 20%;
+	width: 10%;
+	float: left;
 }
