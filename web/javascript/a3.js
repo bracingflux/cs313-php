@@ -1,6 +1,6 @@
   $( function() {
     var dialog, form,
-/* 
+ 
       // From http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state-%28type=email%29
       emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
       name = $( "#name" ),
@@ -60,28 +60,28 @@
         dialog.dialog( "close" );
       }
       return valid;
-    }*/
+    }
  
     dialog = $( "#dialog-form" ).dialog({
       autoOpen: false,
-      height: 500,
+      height: 400,
       width: 350,
       modal: true,
       buttons: {
-        "Create an account": /*addUser,*/
+        "Create an account": addUser,
         Cancel: function() {
           dialog.dialog( "close" );
         }
       },
       close: function() {
-        // form[ 0 ].reset();
-        // allFields.removeClass( "ui-state-error" );
+        form[ 0 ].reset();
+        allFields.removeClass( "ui-state-error" );
       }
     });
  
     form = dialog.find( "form" ).on( "submit", function( event ) {
       event.preventDefault();
-      // addUser();
+      addUser();
     });
  
     $( "#create-user" ).button().on( "click", function() {
