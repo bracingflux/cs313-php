@@ -77,11 +77,11 @@ div.rbItem {
 	border-radius: 13px; 
 	padding: .8%;
 	margin: 1% 37%;
-	min-height: 170px;
+	min-height: 180px;
 }
 
 #rbPhoto {
-	width: 25%;
+	width: 22%;
 	float: left;
 	margin: 2%;
 }
