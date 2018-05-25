@@ -77,21 +77,22 @@ div.rbItem {
 	border-radius: 13px; 
 	padding: .8%;
 	margin: 1% 30%;
-	height: 200px;
+	height: 150px;
 }
 
 #rbPhoto {
-	width: 7%;
+	width: 10%;
 	float: left;
 	margin: 2% 1% 2% 15%;
 	background: purple;
 }
 
 #rbName {
-	width: 40%;
+	width: 60%;
 	float: right;
 	color: white;
 	background: orange;
 	text-align: center;
+	margin: 4% auto; 
 	/*clear: both;*/
 }
