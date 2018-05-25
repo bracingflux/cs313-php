@@ -32,7 +32,7 @@ img.center_photo {
     overflow: hidden;
     float: left;
     /*width: 30%;*/
-    max-height: 10%; 
+    max-height: 1%; 
 }
 
 p.def {
