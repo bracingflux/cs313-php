@@ -13,6 +13,8 @@
 		</p>
 	</div>
 
+	<img src="../../photos/rbs/Abita Root Beer.png" class="center" alt="Abita Root Beer!!!">
+
 	<?php
 	require('load_db.php');
 
