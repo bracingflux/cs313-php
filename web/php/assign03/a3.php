@@ -11,7 +11,7 @@
 	require('load_db.php');
 
 	foreach ($db->query('SELECT name, description FROM rb_test') as $row) {
-		echo "<div class='rb_item'><p>" . $row['name'] . "</div>";
+		echo "<div class='rb_item'><p class='white'>" . $row['name'] . "</p></div>";
 	}		
 	?>
 </body>
