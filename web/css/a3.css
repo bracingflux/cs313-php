@@ -81,7 +81,7 @@ div.rbItem {
 }
 
 #rbPhoto {
-	width: 18%;
+	width: 25%;
 	float: left;
 	margin: 2%;
 }
@@ -93,6 +93,6 @@ div.rbItem {
 	font-size: 1.1em;
 	font-family: Verdana;
 	text-align: center;
-	margin: 1%; 
+	margin: 8% 1%; 
 	/*clear: both;*/
 }
