@@ -12,6 +12,7 @@
 	<title>Root Beer Revelry</title>	
 </head>
 <body>
+	<?php $rb = ""; ?>
 	<a href="https://www.facebook.com/Root-Beer-Revelry-181821778540286/" target="_blank" class="fa fa-facebook" id="shadow"></a>
 	<a href="https://twitter.com/rootbeerrevelry?lang=en" class="fa fa-twitter" target="_blank" id="shadow"></a>
 	<div id="banner">
@@ -29,6 +30,7 @@
 	  <p class="validateTips">All form fields are required.</p>
 	  <form>
 	    <fieldset>
+	    <?php echo "<h1>$rb<\p>"; ?>
 	      <label for="name">Name</label>
 	      <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
 	      <label for="email">Email</label>
@@ -41,7 +43,7 @@
 	  </form>
 	</div>
 
-	<button id="create-user">Create new user</button>
+	<button id="create-user" onclick="<?php $rb = "Abita Root Beer"; ?>" >Create new user</button>
 	<?php
 	require('load_db.php');
 
