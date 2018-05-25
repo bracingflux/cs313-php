@@ -15,7 +15,7 @@
 
 	<div class="rbItem">
 		<div class="rbPhoto">
-			<img src="../../photos/rbs/Abita Root Beer" alt="Abita Root Beer">
+			<img src="../../photos/rbs/Abita Root Beer.png" alt="Abita Root Beer">
 		</div>
 		<div class="rbName">
 			<p>Abita Root Beer</p>
