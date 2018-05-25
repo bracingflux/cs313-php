@@ -83,7 +83,7 @@ div.rbItem {
 #rbPhoto {
 	width: 22%;
 	float: left;
-	margin: 2%;
+	/*margin: 2%;*/
 }
 
 #rbName {
