@@ -26,6 +26,8 @@
 			<img id="rbPhoto" src="../../photos/rbs/Abita Root Beer.png" alt="Abita Root Beer">
 			<p id="rbName">Abita Root Beer</p>
 	</div> -->
+	<button id="create-user" onclick='<?php $rb = "Abita Root Beer"; ?>' >Create new user</button>
+	
 	<div id="dialog-form" title="Create new user">
 	  <p class="validateTips">All form fields are required.</p>
 	  <form>
@@ -43,7 +45,6 @@
 	  </form>
 	</div>
 
-	<button id="create-user" onclick='<?php $rb = "Abita Root Beer"; ?>' >Create new user</button>
 	<?php
 	require('load_db.php');
 
