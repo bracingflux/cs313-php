@@ -79,7 +79,7 @@ div.rbItem {
 	margin: 1% 15%;
 }
 
-div.rbPhoto {
+#rbPhoto {
 	width: 10%;
 	float: left;
 	background: purple;
