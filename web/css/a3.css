@@ -25,21 +25,18 @@ p.white {
 
 img.center {
     display: block;
-    margin-left: 34%;
+    margin: auto 30%; 
     margin-right: auto;
     width: 40%;
     overflow: hidden;
     height: 7.5%; 
-    width: 39.62%;
 }
 
 p.def {
 	color: white;
-	margin-right: auto;
-	margin-left: 52%;
+	margin: auto 40%;
 	font-size: 1.05em;
 	font-family: Tahoma "Times New Roman";
-	/*margin-left: 52%;*/
 }
 
 #banner {
