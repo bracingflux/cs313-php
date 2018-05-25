@@ -89,13 +89,13 @@ div.rbItem {
 }
 
 #rbName {
-	width: 70%;
+	width: 50%;
 	float: right;
 	color: white;
 	font-size: 1.1em;
 	font-family: Verdana;
 	text-align: center;
-	margin: 25% 1%;
+	margin: 25% 10%;
 	background: orange; 
 	/*clear: both;*/
 }
