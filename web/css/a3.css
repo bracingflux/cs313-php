@@ -50,3 +50,7 @@ div.rb_photo {
 	width: 10%;
 	float: left;
 }
+
+div.row {
+	width: 100%;
+}
