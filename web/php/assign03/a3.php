@@ -13,22 +13,23 @@
 		</p>
 	</div>
 
-	<div class="rbItem">
-		<!-- <div class="rbPhoto"> -->
+	<!-- <div class="rbItem">
 			<img id="rbPhoto" src="../../photos/rbs/Abita Root Beer.png" alt="Abita Root Beer">
-		<!-- </div> -->
-		<!-- <div class="rbName"> -->
 			<p id="rbName">Abita Root Beer</p>
-		<!-- </div> -->
-	</div>
+	</div> -->
 
 	<?php
 	require('load_db.php');
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
-		echo "<div class='row'><div class='rb_photo'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" class='center' alt='" . $row['name'] . "'></div>";
-		echo "<div class='rb_item'><p class='white'>" . $row['name'] ."</p></div></div>";		
+		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
+		echo "<p id='rbName'>" . $row['name'] ."</p></div>";		
 	}		
 	?>
 </body>
 </html>
+
+<!-- foreach ($db->query('SELECT name FROM root_beers') as $row) {
+		echo "<div class='row'><div class='rb_photo'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" class='center' alt='" . $row['name'] . "'></div>";
+		echo "<div class='rb_item'><p class='white'>" . $row['name'] ."</p></div></div>";		
+	} -->
