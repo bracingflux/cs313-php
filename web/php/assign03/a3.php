@@ -34,9 +34,9 @@
 			$db = new PDO("pgsql:host=$mHost;port=$mPort;dbname=$dbName", $mUser, $mPass);
 			echo "<p>db set</p>";
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			foreach ($db->query('SELECT name, description FROM root_beers') as $row) {
+			foreach ($db->query('SELECT name, description FROM rb_test') as $row) {
 				echo "Root Beer name: " . $row['name'];
-				echo "Description: " . $row['description'];
+				// echo "Description: " . $row['description'];
 				echo "<br>";
 			}
 			echo "<p>Items should have printed</p>";
