@@ -22,3 +22,19 @@ p.white {
 	font-size: 1.12em;
 	font-family: Verdana;
 }
+
+img.center {
+    display: block;
+    margin-left: 34%;
+    margin-right: auto;
+    width: 40%;
+    overflow: hidden;
+}
+
+p.def {
+	color: white;
+	margin-right: auto;
+	margin-left: 52%;
+	font-size: 1.05em;
+	font-family: Tahoma "Times New Roman";
+}
