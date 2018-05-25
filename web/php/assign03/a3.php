@@ -30,7 +30,7 @@
 	  <p class="validateTips">All form fields are required.</p>
 	  <form>
 	    <fieldset>
-	    <?php echo "<h1>$rb<\p>"; ?>
+	    <?php echo "<h1>RB: $rb</h1>"; ?>
 	      <label for="name">Name</label>
 	      <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
 	      <label for="email">Email</label>
