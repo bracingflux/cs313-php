@@ -83,10 +83,9 @@ div.rbItem {
 #rbPhoto {
 	/*width: 22%;*/
 	max-height: 180px;
-	max-width: 60px;
+	max-width: 70px;
 	float: left;
 	margin: 1% 1% 2% 3%;
-	background: yellow;
 }
 
 #rbName {
@@ -97,6 +96,5 @@ div.rbItem {
 	font-family: Verdana;
 	text-align: center;
 	margin: 25% 1%;
-	background: orange; 
 	/*clear: both;*/
 }
