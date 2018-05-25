@@ -76,12 +76,12 @@ div.rbItem {
 	border: 4px solid #c3a2a2; 
 	border-radius: 13px; 
 	padding: .8%;
-	margin: 1% 35%;
+	margin: 1% 45%;
 	height: 150px;
 }
 
 #rbPhoto {
-	width: 15%;
+	width: 18%;
 	float: left;
 	margin: 2%;
 }
@@ -93,6 +93,6 @@ div.rbItem {
 	font-size: 1.1em;
 	font-family: Verdana;
 	text-align: center;
-	margin: 15% 5%; 
+	margin: 1%; 
 	/*clear: both;*/
 }
