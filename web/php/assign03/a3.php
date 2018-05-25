@@ -13,6 +13,15 @@
 		</p>
 	</div>
 
+	<div class="rbItem">
+		<div class="rbPhoto">
+			<img src="../../photos/rbs/Abita Root Beer" alt="Abita Root Beer">
+		</div>
+		<div class="rbName">
+			<p>Abita Root Beer</p>
+		</div>
+	</div>
+
 	<?php
 	require('load_db.php');
 
