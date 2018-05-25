@@ -41,7 +41,7 @@
 	  </form>
 	</div>
 
-	<button id="rb-item">More Info</button>
+	<button id="create-user">More Info</button>
 	<?php
 	require('load_db.php');
 
