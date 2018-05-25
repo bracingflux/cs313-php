@@ -30,7 +30,7 @@ img.center_photo {
     max-width: 100px;
     overflow: hidden;
     float: left;
-    /*height: 2%; */
+    height: 20px; 
 }
 
 p.def {
