@@ -27,7 +27,7 @@ img.center {
 img.center_photo {
 	display: block;
     margin-right: auto;
-    width: 5%;
+    max-width: 100px;
     overflow: hidden;
     float: left;
     /*height: 2%; */
