@@ -9,7 +9,7 @@
 	<div id="banner">
 		<img src="../../photos/revelry.jpg" class="center" alt="Root Beer Revelry banner">
 		<p class="def">
-			rev·el·ry \'re-vəl-rē\<br> n. pl. rev·el·ries<br> Boisterous merrymaking.
+			rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.
 		</p>
 	</div>
 
