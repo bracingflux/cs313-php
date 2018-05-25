@@ -10,8 +10,8 @@
 	<?php
 	require('load_db.php');
 
-	foreach ($db->query('SELECT name, description, type, brand FROM rb_test') as $row) {
-		echo "<div class='rb_item'><p class='white'>" . $row['name'] . "<br>" . $row['description'] . " " . $row['type'] . " " . $row['brand'] . "</p></div>";
+	foreach ($db->query('SELECT name FROM rb_test') as $row) {
+		echo "<div class='rb_item'><p class='white'>" . $row['name'] ."</p></div>";
 	}		
 	?>
 </body>
