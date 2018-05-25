@@ -39,10 +39,6 @@
 	      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
 	    </fieldset>
 	  </form>
-		<div class="rbItem">
-			<img id="rbPhoto" src="../../photos/rbs/Abita Root Beer.png" alt="Abita Root Beer">
-			<p id="rbName">Abita Root Beer</p>
-		</div>
 	</div>
 
 	<button id="create-user">Create new user</button>
@@ -56,8 +52,3 @@
 	?>
 </body>
 </html>
-
-<!-- foreach ($db->query('SELECT name FROM root_beers') as $row) {
-		echo "<div class='row'><div class='rb_photo'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" class='center' alt='" . $row['name'] . "'></div>";
-		echo "<div class='rb_item'><p class='white'>" . $row['name'] ."</p></div></div>";		
-	} -->
