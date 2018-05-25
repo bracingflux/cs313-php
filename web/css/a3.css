@@ -34,7 +34,7 @@ img.center {
 
 p.def {
 	color: white;
-	margin: auto 50%;
+	margin: auto auto auto 50%;
 	font-size: 1.05em;
 	font-family: Tahoma "Times New Roman";
 }
