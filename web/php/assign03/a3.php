@@ -17,7 +17,7 @@
 	require('load_db.php');
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
-		echo "<img src='../../photos/rbs/" . $row['name'] . " class='center' alt='" . $row['name'] . "'>";
+		echo "<img src='../../photos/rbs/" . $row['name'] . ".png class='center' alt='" . $row['name'] . "'>";
 		echo "<div class='rb_item'><p class='white'>" . $row['name'] ."</p></div>";
 	}		
 	?>
