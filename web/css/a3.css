@@ -85,7 +85,7 @@ div.rbItem {
 	background: purple;
 }
 
-div.rbName {
+#rbName {
 	width: 20%;
 	float: right;
 	color: white;

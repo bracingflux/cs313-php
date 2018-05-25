@@ -17,9 +17,9 @@
 		<!-- <div class="rbPhoto"> -->
 			<img id="rbPhoto" src="../../photos/rbs/Abita Root Beer.png" alt="Abita Root Beer">
 		<!-- </div> -->
-		<div class="rbName">
-			<p>Abita Root Beer</p>
-		</div>
+		<!-- <div class="rbName"> -->
+			<p id="rbName">Abita Root Beer</p>
+		<!-- </div> -->
 	</div>
 
 	<?php
