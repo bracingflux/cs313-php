@@ -29,12 +29,12 @@ img.center {
     margin-right: auto;
     width: 40%;
     overflow: hidden;
-    height: 7.5%; 
+    height: 4%; 
 }
 
 p.def {
 	color: white;
-	margin: auto 40%;
+	margin: auto 50%;
 	font-size: 1.05em;
 	font-family: Tahoma "Times New Roman";
 }
