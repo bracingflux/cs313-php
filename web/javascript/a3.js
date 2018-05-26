@@ -99,6 +99,7 @@
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
+    alert(serializedData);
     
     $.ajax({  
       type: 'post',
