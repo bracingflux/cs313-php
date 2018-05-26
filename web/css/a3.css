@@ -103,6 +103,9 @@ div.rbItem {
 	display: none;
 }
 
+#loaded_rb {
+	white-space: pre-line;
+}
 
 
 
