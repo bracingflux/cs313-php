@@ -202,3 +202,7 @@ div#users-contain table td, div#users-contain table th {
 .ui-dialog {
 	background: orange;
 }
+
+.ui-dialog-buttonpane {
+	background: blue;
+}
