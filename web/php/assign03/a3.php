@@ -29,7 +29,7 @@
 	
 
 
-		<button id="create-user" onclick="function(<?php echo "Abita Root Beer"; ?>)">Create new user</button>
+		<button id="create-user">Create new user</button>
 
 
 	<div id="dialog-form" title="Create new user">
