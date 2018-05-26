@@ -198,3 +198,7 @@ div#users-contain table td, div#users-contain table th {
 .ui-dialog-titlebar {
       background:red;
 }
+
+.ui-dialog {
+	background: orange;
+}
