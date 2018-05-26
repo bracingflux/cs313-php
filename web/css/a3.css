@@ -152,19 +152,25 @@ button.view_rb {
 
 
 label, input { 
-	display:block; 
+	display:block;
+	background: brown;
+	color: brown; 
 }
 
 input.text { 
 	margin-bottom:12px; 
 	width:95%; 
-	padding: .4em; 
+	padding: .4em;
+	background: gold;
+	color: gold; 
 }
 
 fieldset { 
 	padding:0; 
 	border:0; 
-	margin-top:25px; 
+	margin-top:25px;
+	background: violet;
+	color: violet;
 }
 
 h1 { font-size: 1.2em; margin: .6em 0; }
@@ -172,7 +178,8 @@ h1 { font-size: 1.2em; margin: .6em 0; }
 div#users-contain { 
 	width: 350px; 
 	margin: 20px 0;
-	background: blue; 
+	background: blue;
+	color: blue;
 }
 
 div#users-contain table { 
@@ -180,6 +187,7 @@ div#users-contain table {
 	border-collapse: collapse; 
 	width: 100%; 
 	background: purple;
+	color: purple;
 }
 
 div#users-contain table td, div#users-contain table th { 
@@ -187,6 +195,7 @@ div#users-contain table td, div#users-contain table th {
 	padding: .6em 10px; 
 	text-align: left; 
 	background: orange;
+	color: orange;
 }
 
 .ui-dialog .ui-state-error { 
