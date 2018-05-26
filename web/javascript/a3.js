@@ -8,7 +8,7 @@
       width: 500,
       modal: true,
       buttons: {
-        Cancel: function() {
+        Okay: function() {
           dialog.dialog( "close" );
         }
       },
