@@ -20,7 +20,7 @@
 
 		$stmt2 = $db->prepare('SELECT "text", "timestamp" FROM comments WHERE root_beer_id=:id');
 		$stmt2->execute(array(':id' => $id));
-		$comment_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		$comment_rows = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
 		foreach ($comment_rows as $row) {
 			echo "Comments:\n\nTime: " . $row['timestamp'] . "\n\nComment: " . $row['text'];
