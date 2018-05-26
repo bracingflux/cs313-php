@@ -47,26 +47,7 @@
 	 
 	      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
 	    </fieldset>
-	  </form>
-	  <?php 
-	  	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	  		$count = count($_POST);
-	  		print_r($_POST . " count: $count");
-	  		foreach ($_POST as $key => $value) {
-	  			echo "<h1>Key: $key Value: $value<h1>";
-	  		}
-	  	}
-	  	else {
-	  		echo "Not set";
-	  	}
-	  	/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	  		foreach ($_POST as $key => $value) {
-	  			echo "<h1>Key: $key Value: $value<h1>";
-	  		}
-	  		$root_beer = $_POST["rb"];
-	  		echo "<h1>$root_beer</h1>";
-	  	}*/
-	   ?>
+	  </form>	  
 	</div>
 
 	<?php
