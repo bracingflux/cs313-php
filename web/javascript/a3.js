@@ -4,8 +4,8 @@
  
     dialog = $( "#dialog-form" ).dialog({
       autoOpen: false,
-      height: 400,
-      width: 350,
+      height: 700,
+      width: 500,
       modal: true,
       buttons: {
         // "Create an account": addUser,

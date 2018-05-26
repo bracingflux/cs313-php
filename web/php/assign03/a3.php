@@ -24,7 +24,7 @@
 	</div>
 
 	<div id="dialog-form" title="Create new user">
-	  <p class="validateTips">All form fields are required.</p>
+	  <!-- <p class="validateTips">All form fields are required.</p> -->
 	  <p id="loaded_rb"></p>	    
 	</div>
 
