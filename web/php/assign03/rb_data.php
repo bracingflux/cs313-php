@@ -16,6 +16,7 @@
 			. "\n\nBrand: " . $row['brand'];
 			$id = $row['id'];
 		}
+		echo "id = $id";
 
 		$stmt2 = $db->prepare('SELECT "text", "timestamp" FROM comments WHERE root_beer_id=:id');
 		$stmt2->execute(array(':id' => $id));
