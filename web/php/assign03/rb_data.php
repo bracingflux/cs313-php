@@ -24,7 +24,7 @@
 		foreach ($comment_rows as $row) {
 			$time = $row['timestamp'];
 			$splitTime = explode(" ", $time);
-			$time = $splitTime[0] . " " . $splitTime[1];
+			$time = $splitTime[0];
 			echo  "\"" . $row['text'] . "\" " . $time . "\n\n";
 		}
 	}
