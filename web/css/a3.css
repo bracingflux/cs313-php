@@ -113,8 +113,8 @@ div.rbItem {
 }
 
 button.view_rb {
-	/*background: #c3a2a2;*/
-	/*color: white;*/
+	float: right;
+	background: #ececec;
 }
 
 
