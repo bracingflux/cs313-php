@@ -35,8 +35,8 @@
 
 	<div id="dialog-form" title="Create new user">
 	  <p class="validateTips">All form fields are required.</p>
-	  <p id="loaded_rb">Root Beer Should appear</p>
-	  <form>
+	  <p id="loaded_rb"></p>
+	  <!-- <form>
 	    <fieldset>
 	      <label for="name">Name</label>
 	      <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
@@ -47,7 +47,7 @@
 	 
 	      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
 	    </fieldset>
-	  </form>	  
+	  </form> -->	  
 	</div>
 
 	<?php
