@@ -33,7 +33,7 @@
 		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
 		echo "<p id='rbName'>" . $row['name'] ."</p>";
 		echo "<form class='rbForm'>";
-		echo "<button type='submit' class='create-user'>More info</button>";
+		echo "<button type='submit' class='view_rb'>More info</button>";
 		echo "<input type='text' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></form></div>";
 	}		
 	?>

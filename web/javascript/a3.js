@@ -21,7 +21,7 @@
       event.preventDefault();
     });
  
-    $( ".create-user" ).button().on( "click", function() {      
+    $( ".view_rb" ).button().on( "click", function() {      
       dialog.dialog( "open" );
     });
   } );
