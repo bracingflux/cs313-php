@@ -11,8 +11,8 @@
 		$stmt->execute(array(':name' => $rb));
 		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		foreach ($rows as $row) {
-			echo "Name: " . $row['name'] . "\nDescription: " . $row['description'] . "\nType: " . $row['type']
-			. "\nBrand: " . $row['brand'];
+			echo "Name: " . $row['name'] . "\n\nDescription: " . $row['description'] . "\n\nType: " . $row['type']
+			. "\n\nBrand: " . $row['brand'];
 		}
 	}
 	else {
