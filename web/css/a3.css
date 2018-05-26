@@ -108,7 +108,14 @@ div.rbItem {
 	font-family: Verdana;
 }
 
+#dialog-form { 
+	background: #c3a2a2;
+}
 
+button.view_rb {
+	background: #c3a2a2;
+	color: white;
+}
 
 
 
