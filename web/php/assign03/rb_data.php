@@ -20,9 +20,11 @@
 		$stmt2 = $db->prepare('SELECT "text", "timestamp" FROM comments WHERE root_beer_id=:id');
 		$stmt2->execute(array(':id' => $id));
 		$comment_rows = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-		echo "Comments:\n\n";
+		echo "\n\nComments:\n\n";
 		foreach ($comment_rows as $row) {
-			echo  "\"" . $row['text'] . "\" " . $row['timestamp'];
+			$time = $row['timestamp'];
+			$time = substr($time, 0, 15);
+			echo  "\"" . $row['text'] . "\" " . $time . "\n\n";
 		}
 	}
 	else {
