@@ -84,7 +84,7 @@
       // addUser();
     });
  
-    $( "create-user" ).button().on( "click", function() {      
+    $( ".create-user" ).button().on( "click", function() {      
       dialog.dialog( "open" );
     });
   } );
