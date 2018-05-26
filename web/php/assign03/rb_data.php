@@ -16,14 +16,13 @@
 			. "\n\nBrand: " . $row['brand'];
 			$id = $row['id'];
 		}
-		echo "id = $id";
 
 		$stmt2 = $db->prepare('SELECT "text", "timestamp" FROM comments WHERE root_beer_id=:id');
 		$stmt2->execute(array(':id' => $id));
 		$comment_rows = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-
+		echo "Comments:\n\n";
 		foreach ($comment_rows as $row) {
-			echo "Comments:\n\nTime: " . $row['timestamp'] . "\n\nComment: " . $row['text'];
+			echo  "\"" . $row['text'] . "\" " . $row['timestamp'];
 		}
 	}
 	else {
