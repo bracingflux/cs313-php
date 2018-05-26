@@ -55,7 +55,11 @@
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
 		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
-		echo "<p id='rbName'>" . $row['name'] ."</p></div>";		
+		echo "<p id='rbName'>" . $row['name'] ."</p></div>";
+		echo "<form id='rbForm'>";
+		echo "<button type='submit' id='create-user'>Create new user</button>";
+		echo "<input type='text' class='hidden1' name='rb' value='" . $row['name'] . "'>";
+		echo "</form>";		
 	}		
 	?>
 </body>
