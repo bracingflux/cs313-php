@@ -106,7 +106,8 @@
       url: 'a3.php',
       data: serializedData,
       success: function () {
-        alert('form was submitted');
+        $('#checkoutItems').load(document.URL + ' #dialog-form');
+        alert('form was submitted');        
       }
     });
 
