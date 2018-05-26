@@ -56,7 +56,7 @@
 	  		}
 	  	}
 	  	else {
-	  		echo "$_SERVER["REQUEST_METHOD"]";
+	  		echo "Not set";
 	  	}
 	  	/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	  		foreach ($_POST as $key => $value) {
