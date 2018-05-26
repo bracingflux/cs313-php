@@ -28,7 +28,7 @@
 			<p id="rbName">Abita Root Beer</p>
 	</div> -->
 	
-	<form id="rbForm">
+	<form class="rbForm">
 		<button type="submit" class="create-user">Create new user</button>
 		<input type="text" class="hidden1" name="rb" value='<?php echo "Abita Root Beer"; ?>'>
 	</form>
@@ -56,7 +56,7 @@
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
 		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
 		echo "<p id='rbName'>" . $row['name'] ."</p>";
-		echo "<form id='rbForm'>";
+		echo "<form class='rbForm'>";
 		echo "<button type='submit' class='create-user'>Create new user</button>";
 		echo "<input type='text' class='hidden1' name='rb' value='" . $row['name'] . "'></div>";
 		echo "</form>";		

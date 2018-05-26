@@ -93,7 +93,7 @@
 
  $(function () {
 
-  $('#rbForm').on('submit', function (e) {
+  $('.rbForm').on('submit', function (e) {
 
     e.preventDefault();
     var $form = $(this);
