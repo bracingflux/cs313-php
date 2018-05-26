@@ -84,7 +84,15 @@
       // addUser();
     });
  
-    $( "#create-user" ).button().on( "click", function() {
+    $( "#create-user" ).button().on( "click", function(rb_data) {
+      var saveData = $.ajax({
+        type: 'POST',
+        url: "a3.php",
+        data: rb_data,
+        dataType: "text",
+        success: function(resultData) { alert("Save Complete") }
+      });
+      saveData.error(function() { alert("Something went wrong"); });
       dialog.dialog( "open" );
     });
   } );

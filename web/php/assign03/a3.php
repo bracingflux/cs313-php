@@ -29,17 +29,13 @@
 	
 
 
-	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-		<button id="create-user">Create new user</button>
-		<input type="text" class="hidden1" name="rb" value="<?php $rb = "Abita Root Beer"; ?>">
-	</form>
+		<button id="create-user" onclick="function(<?php echo "Abita Root Beer"; ?>)">Create new user</button>
 
 
 	<div id="dialog-form" title="Create new user">
 	  <p class="validateTips">All form fields are required.</p>
 	  <form>
 	    <fieldset>
-	    <?php echo "<h1>RB: $rb</h1>"; ?>
 	      <label for="name">Name</label>
 	      <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
 	      <label for="email">Email</label>
@@ -52,8 +48,11 @@
 	  </form>
 	  <?php 
 	  	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	  		$root_beer = $_POST["rb"];
-	  		echo "<h1>$root_beer</h1>";
+	  		foreach ($_POST as $key => $value) {
+	  			echo "<h1>Key: $key Value: $value<h1>";
+	  		}
+	  		// $root_beer = $_POST["rb"];
+	  		// echo "<h1>$root_beer</h1>";
 	  	}
 	   ?>
 	</div>
