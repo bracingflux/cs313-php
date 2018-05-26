@@ -106,7 +106,7 @@
       url: 'rb_data.php',
       data: serializedData,
       success: function (response) {
-        $('#loaded_rb').val(response);
+        $('#loaded_rb').text(response);
         $('#checkoutItems').load(document.URL + ' #dialog-form');
         alert('form was submitted' + " " + response);        
       }
