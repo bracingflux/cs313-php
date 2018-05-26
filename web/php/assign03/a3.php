@@ -49,7 +49,8 @@
 	  </form>
 	  <?php 
 	  	if (isset($_POST)) {
-	  		print_r($_POST);
+	  		$count = count($_POST);
+	  		print_r($_POST . " count: $count");
 	  		foreach ($_POST as $key => $value) {
 	  			echo "<h1>Key: $key Value: $value<h1>";
 	  		}
