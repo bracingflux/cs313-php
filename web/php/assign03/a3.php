@@ -26,9 +26,15 @@
 			<img id="rbPhoto" src="../../photos/rbs/Abita Root Beer.png" alt="Abita Root Beer">
 			<p id="rbName">Abita Root Beer</p>
 	</div> -->
-	<button id="create-user" onclick='<?php $rb = "Abita Root Beer"; ?>' >Create new user</button>
-	<button id="create-user" onclick='<?php $rb = "Ale-O"; ?>' >See more</button>
 	
+
+
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+		<button id="create-user">Create new user</button>
+		<input type="text" class="hidden1" name="rb" value="<?php $rb = "Abita Root Beer"; ?>">
+	</form>
+
+
 	<div id="dialog-form" title="Create new user">
 	  <p class="validateTips">All form fields are required.</p>
 	  <form>
@@ -44,6 +50,12 @@
 	      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
 	    </fieldset>
 	  </form>
+	  <?php 
+	  	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	  		$root_beer = $_POST["rb"];
+	  		echo "<h1>$root_beer</h1>";
+	  	}
+	   ?>
 	</div>
 
 	<?php

@@ -99,7 +99,9 @@ div.rbItem {
 	/*clear: both;*/
 }
 
-
+.hidden1 {
+	display: none;
+}
 
 
 
