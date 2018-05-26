@@ -96,11 +96,14 @@
   $('#rbForm').on('submit', function (e) {
 
     e.preventDefault();
-
+    var $form = $(this);
+    var $inputs = $form.find("input, select, button, textarea");
+    var serializedData = $form.serialize();
+    
     $.ajax({  
       type: 'post',
       url: 'a3.php',
-      data: $('#rbForm').serialize(),
+      data: serializedData,
       success: function () {
         alert('form was submitted');
       }
