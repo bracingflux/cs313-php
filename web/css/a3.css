@@ -109,12 +109,12 @@ div.rbItem {
 }
 
 #dialog-form { 
-	background: #c3a2a2;
+	/*background: #c3a2a2;*/
 }
 
 button.view_rb {
-	background: #c3a2a2;
-	color: white;
+	/*background: #c3a2a2;*/
+	/*color: white;*/
 }
 
 
@@ -193,4 +193,8 @@ div#users-contain table td, div#users-contain table th {
 .validateTips { 
 	border: 1px solid transparent; 
 	padding: 0.3em; 
+}
+
+.ui-dialog-titlebar {
+      background:red;
 }
