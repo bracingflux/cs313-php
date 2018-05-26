@@ -196,13 +196,13 @@ div#users-contain table td, div#users-contain table th {
 }
 
 .ui-dialog-titlebar {
-      background:red;
+      background: #c3a2a2;
 }
 
-.ui-dialog {
+/*.ui-dialog {
 	background: orange;
-}
+}*/
 
 .ui-dialog-buttonpane {
-	background: blue;
+	background: #c3a2a2;
 }
