@@ -27,10 +27,10 @@
 			<p id="rbName">Abita Root Beer</p>
 	</div> -->
 	
-
-
-		<button id="create-user">Create new user</button>
-
+	<form id="rbForm">
+		<button type="submit" id="create-user">Create new user</button>
+		<input type="text" class="hidden1" name="rb" value='<?php echo "Abita Root Beer"; ?>'>
+	</form>
 
 	<div id="dialog-form" title="Create new user">
 	  <p class="validateTips">All form fields are required.</p>
