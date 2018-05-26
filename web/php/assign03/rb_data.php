@@ -23,7 +23,7 @@
 		echo "\n\nComments:\n\n";
 		foreach ($comment_rows as $row) {
 			$time = $row['timestamp'];
-			$splitTime = split(' ', $time);
+			$splitTime = explode(" ", $time);
 			$time = $splitTime[0] . " " . $splitTime[1];
 			echo  "\"" . $row['text'] . "\" " . $time . "\n\n";
 		}
