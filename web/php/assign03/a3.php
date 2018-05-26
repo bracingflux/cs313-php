@@ -35,6 +35,7 @@
 
 	<div id="dialog-form" title="Create new user">
 	  <p class="validateTips">All form fields are required.</p>
+	  <p id="loaded_rb"></p>
 	  <form>
 	    <fieldset>
 	      <label for="name">Name</label>

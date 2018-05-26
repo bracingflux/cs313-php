@@ -99,15 +99,16 @@
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
-    alert(serializedData);
+    // alert(serializedData);
     
     $.ajax({  
       type: 'post',
-      url: 'a3.php',
+      url: 'rb_data.php',
       data: serializedData,
-      success: function () {
+      success: function (response) {
+        response = document.getElementById('loaded_rb').value;
         $('#checkoutItems').load(document.URL + ' #dialog-form');
-        alert('form was submitted');        
+        alert('form was submitted' + response);        
       }
     });
 
