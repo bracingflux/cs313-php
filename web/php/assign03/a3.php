@@ -36,7 +36,7 @@
 		echo "<p id='rbName'>" . $row['name'] ."</p>";
 		echo "<form class='rbForm'>";
 		echo "<button type='submit' class='create-user'>Create new user</button>";
-		echo "<input type='text' class='hidden1' name='rb' value="" . $row['name'] . ""></div>";
+		echo "<input type='text' class='hidden1' name='rb' value='" . $row['name'] . "'></div>";
 		echo "</form>";		
 	}		
 	?>
