@@ -22,11 +22,6 @@
 			rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.
 		</p>
 	</div>
-
-	<!-- <div class="rbItem">
-			<img id="rbPhoto" src="../../photos/rbs/Abita Root Beer.png" alt="Abita Root Beer">
-			<p id="rbName">Abita Root Beer</p>
-	</div> -->
 	
 	<form class="rbForm">
 		<button type="submit" class="create-user">Create new user</button>
@@ -35,19 +30,7 @@
 
 	<div id="dialog-form" title="Create new user">
 	  <p class="validateTips">All form fields are required.</p>
-	  <p id="loaded_rb"></p>
-	  <!-- <form>
-	    <fieldset>
-	      <label for="name">Name</label>
-	      <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
-	      <label for="email">Email</label>
-	      <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
-	      <label for="password">Password</label>
-	      <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
-	 
-	      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-	    </fieldset>
-	  </form> -->	  
+	  <p id="loaded_rb"></p>	    
 	</div>
 
 	<?php
