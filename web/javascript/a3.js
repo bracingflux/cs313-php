@@ -14,6 +14,7 @@
         }
       },
       close: function() {
+        $('#loaded_rb').text("");
         // form[ 0 ].reset();
         // allFields.removeClass( "ui-state-error" );
       }
