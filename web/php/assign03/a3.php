@@ -48,12 +48,15 @@
 	    </fieldset>
 	  </form>
 	  <?php 
-	  	if (isset($_POST)) {
+	  	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	  		$count = count($_POST);
 	  		print_r($_POST . " count: $count");
 	  		foreach ($_POST as $key => $value) {
 	  			echo "<h1>Key: $key Value: $value<h1>";
 	  		}
+	  	}
+	  	else {
+	  		echo "$_SERVER["REQUEST_METHOD"]";
 	  	}
 	  	/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	  		foreach ($_POST as $key => $value) {
