@@ -97,7 +97,7 @@
 
     e.preventDefault();
 
-    $.ajax({
+    $.ajax({  
       type: 'post',
       url: 'a3.php',
       data: $('#rbForm').serialize(),
