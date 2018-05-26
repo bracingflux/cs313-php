@@ -34,8 +34,7 @@
 		echo "<p id='rbName'>" . $row['name'] ."</p>";
 		echo "<form class='rbForm'>";
 		echo "<button type='submit' class='create-user'>More info</button>";
-		echo "<input type='text' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></div>";
-		echo "</form>";		
+		echo "<input type='text' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></form></div>";
 	}		
 	?>
 </body>

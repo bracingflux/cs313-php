@@ -43,7 +43,6 @@
       data: serializedData,
       success: function (response) {
         $('#loaded_rb').text(response);
-        // $('#checkoutItems').load(document.URL + ' #dialog-form');
       }
     });
 
