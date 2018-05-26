@@ -29,7 +29,7 @@
 	</div> -->
 	
 	<form id="rbForm">
-		<button type="submit" id="create-user">Create new user</button>
+		<button type="submit" class="create-user">Create new user</button>
 		<input type="text" class="hidden1" name="rb" value='<?php echo "Abita Root Beer"; ?>'>
 	</form>
 
@@ -57,7 +57,7 @@
 		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
 		echo "<p id='rbName'>" . $row['name'] ."</p>";
 		echo "<form id='rbForm'>";
-		echo "<button type='submit' id='create-user'>Create new user</button>";
+		echo "<button type='submit' class='create-user'>Create new user</button>";
 		echo "<input type='text' class='hidden1' name='rb' value='" . $row['name'] . "'></div>";
 		echo "</form>";		
 	}		
