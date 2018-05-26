@@ -27,6 +27,7 @@
 			<p id="rbName">Abita Root Beer</p>
 	</div> -->
 	<button id="create-user" onclick='<?php $rb = "Abita Root Beer"; ?>' >Create new user</button>
+	<button id="create-user" onclick='<?php $rb = "Ale-O"; ?>' >See more</button>
 	
 	<div id="dialog-form" title="Create new user">
 	  <p class="validateTips">All form fields are required.</p>
