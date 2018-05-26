@@ -15,7 +15,7 @@
       close: function() {
         $('#loaded_rb').text("");
       }
-    });
+    }).prev(".ui-dialog-titlebar").css("background","red");
  
     form = dialog.find( "form" ).on( "submit", function( event ) {
       event.preventDefault();

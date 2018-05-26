@@ -109,12 +109,12 @@ div.rbItem {
 }
 
 #dialog-form { 
-	/*background: #c3a2a2;*/
+	background: #c3a2a2;
 }
 
 button.view_rb {
-	/*background: #c3a2a2;*/
-	/*color: white;*/
+	background: #c3a2a2;
+	color: white;
 }
 
 
@@ -152,50 +152,38 @@ button.view_rb {
 
 
 label, input { 
-	display:block;
-	background: brown;
-	color: brown; 
+	display:block; 
 }
 
 input.text { 
 	margin-bottom:12px; 
 	width:95%; 
-	padding: .4em;
-	background: gold;
-	color: gold; 
+	padding: .4em; 
 }
 
 fieldset { 
 	padding:0; 
 	border:0; 
-	margin-top:25px;
-	background: violet;
-	color: violet;
+	margin-top:25px; 
 }
 
 h1 { font-size: 1.2em; margin: .6em 0; }
 
 div#users-contain { 
 	width: 350px; 
-	margin: 20px 0;
-	background: blue;
-	color: blue;
+	margin: 20px 0; 
 }
 
 div#users-contain table { 
 	margin: 1em 0; 
 	border-collapse: collapse; 
 	width: 100%; 
-	background: purple;
-	color: purple;
 }
 
 div#users-contain table td, div#users-contain table th { 
 	border: 1px solid #eee; 
 	padding: .6em 10px; 
 	text-align: left; 
-	background: orange;
-	color: orange;
 }
 
 .ui-dialog .ui-state-error { 
