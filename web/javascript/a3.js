@@ -114,7 +114,7 @@
 
     // Fire off the request to /form.php
     request = $.ajax({
-        url: "a3.php",
+        /*url: "a3.php",*/
         type: "post",
         data: serializedData
     });
