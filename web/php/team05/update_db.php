@@ -39,7 +39,7 @@
         echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p>";
         try {
           echo "<h2>Topic</h2>";
-          foreach ($db->query("SELECT name FROM topic INNER JOIN topic_Script WHERE script_id = $id") as $row) {
+          foreach ($db->query("SELECT t.name FROM topic t INNER JOIN topic_Script ts ON t.id = ts.topic_id WHERE script_id = $id") as $row) {
             echo "<p>". $row['name'] . "</p>";
           }
         }
