@@ -9,7 +9,7 @@
    $verse = $_POST['verse'];
    $content = $_POST['content'];
 
-   $stmt = $db->prepare('INSERT INTO scripture(book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content) WHERE book=:book AND chapter=:chapter AND verse=:verse AND content=:content');
+   $stmt = $db->prepare('INSERT INTO scripture (book, chapter, verse, content) VALUES (book, chapter, verse, content) WHERE book=:book AND chapter=:chapter AND verse=:verse AND content=:content');
     $stmt->bindValue(':book', $book, PDO::PARAM_STR);
     $stmt->bindValue(':chapter', $chapter, PDO::PARAM_INT);
     $stmt->bindValue(':verse', $verse, PDO::PARAM_INT);
