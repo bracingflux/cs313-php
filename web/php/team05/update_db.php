@@ -1,3 +1,6 @@
 <?php
-  var_dump($_POST);  
+  require("db_info.php");
+  foreach ($_POST as $key => $value) {
+     echo "key: $key value: $value<br>";
+   } 
  ?>
