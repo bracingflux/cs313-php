@@ -56,6 +56,12 @@
    ?>
    <div class="container">
 
+   <?php 
+      foreach ($db->query('SELECT book, chapter, verse, content FROM scripture') as $row) {
+            echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><br>";
+         }
+    ?>
+
     <h2>Select Book</h2>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
