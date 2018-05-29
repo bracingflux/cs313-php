@@ -8,8 +8,7 @@
    $chapter = $_POST['chapter'];
    $verse = $_POST['verse'];
    $content = $_POST['content'];
-
-   echo "VARIABLES SET: $book $chapter $verse $content <br>";
+   $topics = $_POST['topic'];
 
    $stmt = $db->prepare('INSERT INTO scripture (book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content)');
     $stmt->bindValue(':book', $book, PDO::PARAM_STR);
@@ -20,11 +19,21 @@
          // $stmt->execute(array(':book' => $book));
          $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-         echo "Before<br>";
          foreach ($rows as $row) {
-            echo "Row: $row<br>";
+            echo "<p>";
           }
-          echo "After<br>"; 
+
+    $script_id = $db->query("SELECT id FROM scripture");
+    $script = $script_id->fetch();
+    $script = $script['id'];
+
+    foreach ($topics as $topic) {      
+       $stmt = $db->prepare('INSERT INTO topic_Script (topic_id, script_id) VALUES (:topic, :script)');
+      $stmt->bindValue(':topic', $topic, PDO::PARAM_INT);
+      $stmt->bindValue(':script', $script, PDO::PARAM_INT);
+      $stmt->execute();
+      }
+      echo "success<br>";           
 
    // $stmt = $db->prepare('INSERT INTO scripture (book, chapter, verse, content) VALUES (book, chapter, verse, content) WHERE book=:book AND chapter=:chapter AND verse=:verse AND content=:content');
  ?>
