@@ -8,6 +8,7 @@
    <title>Scripture Resources</title> 
 </head>
 <body>
+<?php require("db_info.php"); ?>
    <form>
      <div class="form-group">
        <label for="exampleInputEmail1">Book</label>
@@ -25,7 +26,7 @@
     </div>
     <div class="form-group">
        <label for="exampleInputPassword1">Content</label>
-       <textarea placeholder="But behold, if ye will awake and arouse your faculties, even to an experiment upon my words, and exercise a particle of faith, yea, even if ye can no more than desire to believe, let this desire work in you, even until ye believe in a manner that ye can give place for a portion of my words."></textarea>
+       <textarea style="width: 600px;" placeholder="But behold, if ye will awake and arouse your faculties, even to an experiment upon my words, and exercise a particle of faith, yea, even if ye can no more than desire to believe, let this desire work in you, even until ye believe in a manner that ye can give place for a portion of my words."></textarea>
     </div>
     <div class="form-check">
      <input type="checkbox" class="form-check-input" id="exampleCheck1">

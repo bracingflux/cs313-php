@@ -9,8 +9,8 @@
 </head>
 <body>
    <h1>Scripture Resources</h1>
-   <?php 
-         $book = "";
+   <?php require("db_info.php");
+         /*$book = "";
          if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $book = test_input($_POST["book"]);
             echo "<p>HERE IS THE BOOK: $book</p>";
@@ -49,7 +49,7 @@
       catch(PDOException $ex) {
          echo "<p>Error: " . $ex->getMessage() . "</p><br>";
          die();
-      }
+      }*/
 
       
       
