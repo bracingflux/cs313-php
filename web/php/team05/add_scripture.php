@@ -26,7 +26,7 @@
     </div>
     <div class="form-group">
        <label for="exampleInputPassword1">Content</label>
-       <textarea name="chapter" style="width: 600px;" placeholder="But behold, if ye will awake and arouse your faculties, even to an experiment upon my words, and exercise a particle of faith, yea, even if ye can no more than desire to believe, let this desire work in you, even until ye believe in a manner that ye can give place for a portion of my words."></textarea>
+       <textarea name="content" style="width: 600px;" placeholder="But behold, if ye will awake and arouse your faculties, even to an experiment upon my words, and exercise a particle of faith, yea, even if ye can no more than desire to believe, let this desire work in you, even until ye believe in a manner that ye can give place for a portion of my words."></textarea>
     </div>
     <?php 
         foreach ($db->query("SELECT name, id FROM topic") as $row) {
