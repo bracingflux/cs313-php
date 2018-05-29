@@ -22,9 +22,10 @@
          foreach ($rows as $row) {
             echo "<p>";
           }
-
-    $script_id = $db->query("SELECT id FROM scripture");
-    $script = $script_id->fetch();
+   $stmt2 = $db->prepare("SELECT id FROM scripture WHERE content =:content");
+    $stmt2->bindValue(':content', $content, PDO::PARAM_STR);
+    $stmt2->execute();    
+    $script = $stmt2->fetch();
     $script = $script['id'];
 
     foreach ($topics as $topic) {      
