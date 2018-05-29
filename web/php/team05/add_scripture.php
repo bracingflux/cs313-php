@@ -10,14 +10,22 @@
 <body>
    <form>
      <div class="form-group">
-     <label for="exampleInputEmail1">Email address</label>
-     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+       <label for="exampleInputEmail1">Book</label>
+       <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Alma">
+       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
     <div class="form-group">
-     <label for="exampleInputPassword1">Password</label>
-     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+       <label for="exampleInputPassword1">Chapter</label>
+       <input type="text" class="form-control" id="exampleInputPassword1" placeholder="32">
+    </div>
+    <div class="form-group">
+       <label for="exampleInputPassword1">Verse</label>
+       <input type="text" class="form-control" id="exampleInputPassword1" placeholder="31">
+    </div>
+    <div class="form-group">
+       <label for="exampleInputPassword1">Content</label>
+       <textarea placeholder="But behold, if ye will awake and arouse your faculties, even to an experiment upon my words, and exercise a particle of faith, yea, even if ye can no more than desire to believe, let this desire work in you, even until ye believe in a manner that ye can give place for a portion of my words."></textarea>
     </div>
     <div class="form-check">
      <input type="checkbox" class="form-check-input" id="exampleCheck1">
