@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php require("db_info.php"); ?>
-   <form>
+   <form action="update_db.php" method="POST">
      <div class="form-group">
        <label for="exampleInputEmail1">Book</label>
        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Alma">
@@ -29,9 +29,10 @@
        <textarea style="width: 600px;" placeholder="But behold, if ye will awake and arouse your faculties, even to an experiment upon my words, and exercise a particle of faith, yea, even if ye can no more than desire to believe, let this desire work in you, even until ye believe in a manner that ye can give place for a portion of my words."></textarea>
     </div>
     <?php 
-        foreach ($db->query("SELECT name FROM topic") as $row) {
+        foreach ($db->query("SELECT name, id FROM topic") as $row) {
           $topic = $row['name'];
-          echo "<input type='checkbox' name='$topic' value='$topic'>$topic";
+          $id = $row['id'];
+          echo "<input type='checkbox' name='topic[]' value='$id'>$topic<br>";
         }
      ?>
     <button type="submit" class="btn btn-primary">Submit</button>
