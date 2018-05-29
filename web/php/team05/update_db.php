@@ -35,11 +35,10 @@
       }
 
       foreach ($db->query('SELECT book, chapter, verse, content, id FROM scripture') as $row) {
-            $id = $row['id'];
-            echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><h2>Topic</h2>";
-            foreach ($db->query("SELECT name FROM topic INNER JOIN topic_Script WHERE script_id = $id") as $row) {
-              echo "<p>". $row['name'] . "</p>";
-            }
-         }
-      } 
+        $id = $row['id'];
+        echo "<p><strong>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</strong> - \"" . $row['content'] . "\"</p><h2>Topic</h2>";
+        foreach ($db->query("SELECT name FROM topic INNER JOIN topic_Script WHERE script_id = $id") as $row) {
+          echo "<p>". $row['name'] . "</p>";
+        }
+      }
  ?>
