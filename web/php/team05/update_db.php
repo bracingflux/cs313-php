@@ -43,8 +43,8 @@
             echo "<p>". $row['name'] . "</p>";
           }
         }
-        catch(...) {
-
+        catch(Exception $ex) {
+          echo "Error";
         }        
       }
  ?>
