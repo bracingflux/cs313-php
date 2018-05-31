@@ -1,7 +1,7 @@
 <?php
   require("db_connect.php");
-   
-  foreach ($_POST as $var) {
+
+  foreach ($_GET as $var) {
     echo "$var<br>";
   }
 ?>
