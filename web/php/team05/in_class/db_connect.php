@@ -22,7 +22,4 @@
          echo "<p>Error: " . $ex->getMessage() . "</p><br>";
          die();
       }
-
-      
-      
 ?>
