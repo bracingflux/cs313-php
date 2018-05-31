@@ -10,7 +10,7 @@
     $query = 'SELECT name, "number" FROM course WHERE id=:id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':id' => $courseId));
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);    
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);    
   }
   else {
     echo "Database variable not set<br>";
@@ -21,7 +21,7 @@
 <html lang="en-US">
 <head>
    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-   <title><?php echo $rows["name"];  ?></title> 
+   <title><?php echo "$row['name']";  ?></title> 
 </head>
 <body>
 
