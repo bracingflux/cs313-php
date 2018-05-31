@@ -5,6 +5,7 @@
   $stmt = $db->prepare($query);
   $stmt->execute();
   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  var_dump($rows);
 ?>
 
 <!DOCTYPE html>
