@@ -9,7 +9,7 @@
    <title></title> 
 </head>
 <body>
-  <h1>Courses
+  <h1>Courses</h1>
 
   <ul>
     <li><p>Course 1</p></li>
