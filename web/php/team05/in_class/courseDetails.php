@@ -30,6 +30,8 @@
    <title><?php echo "$name";  ?></title> 
 </head>
 <body>
-
+  <?php 
+    "<h1>Showing notes for $name</h1>"
+   ?>
 </body>
 </html>
