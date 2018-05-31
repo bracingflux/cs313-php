@@ -31,7 +31,10 @@
 </head>
 <body>
   <?php 
-    "<h1>Showing notes for " . $name . "</h1>"
+    echo "<h1>Showing notes for " . $name . "</h1>";
    ?>
+   <form action="" method="POST">
+     
+   </form>
 </body>
 </html>
