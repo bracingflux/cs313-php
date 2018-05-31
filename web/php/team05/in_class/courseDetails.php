@@ -1,7 +1,7 @@
 <?php
 require("db_connect.php");
 $courseId = htmlspecialchars($_GET["course_id"]);
-$db = get_db();
+// $db = get_db();
 $query = "SELECT name, number FROM course WHERE id=:id";
 $statement = $db->prepare($query);
 $statement->bindValue(":id", $courseId, PDO::PARAM_INT);
