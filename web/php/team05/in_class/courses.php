@@ -1,11 +1,17 @@
 <?php 
 	require("db_connect.php");
 
-  $query = "SELECT id, name, number FROM course";
-  $stmt = $db->prepare($query);
-  $stmt->execute();
-  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-  var_dump($rows);
+  if (isset($db)) {
+    $query = 'SELECT id, name, "number" FROM course';
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    var_dump($rows);
+  }
+  else {
+    echo "Database not set<br>";
+  }
+  
 ?>
 
 <!DOCTYPE html>
