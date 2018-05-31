@@ -1,5 +1,10 @@
 <?php 
 	require("db_connect.php");
+
+  $query = "SELECT id, name, number FROM course";
+  $stmt = $db->prepare($query);
+  $stmt->execute();
+  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
