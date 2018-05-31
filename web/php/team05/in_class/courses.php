@@ -5,11 +5,10 @@
     $query = 'SELECT id, name, "number" FROM course';
     $stmt = $db->prepare($query);
     $stmt->execute();
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($rows);
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);    
   }
   else {
-    echo "Database not set<br>";
+    echo "Database variable not set<br>";
   }
   
 ?>
@@ -24,10 +23,13 @@
   <h1>Courses</h1>
 
   <ul>
-    <li><p>Course 1</p></li>
-    <li><p>Course 2</p></li>
-    <li><p>Course 3</p></li>
-    <li><p>Course 4</p></li>
+    <?php 
+        foreach ($rows as $row) {
+          $name = $row["name"];
+          $number = $row["number"];
+          echo"<li>$number - $name</li>";
+        }
+     ?>
   </ul>
 
 </body>
