@@ -25,10 +25,9 @@
   <ul>
     <?php 
         foreach ($rows as $row) {
-          $id = $row["id"];
           $name = $row["name"];
           $number = $row["number"];  
-          echo"<a href='courseDetails.php?course_id=$id'><li>$number - $name</li></a>";
+          echo"<a href='courseDetails.php'></a><li>$number - $name</li>";
         }
      ?>
   </ul>
