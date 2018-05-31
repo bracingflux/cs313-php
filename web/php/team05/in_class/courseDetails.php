@@ -11,6 +11,7 @@
   if (isset($db)) {
     $query = 'SELECT name, "number" FROM course WHERE id=:id';
     $stmt = $db->prepare($query);
+    // OR $stmt->bindValue(":id", $courseId, PDO:PARAM_INT);
     $stmt->execute(array(':id' => $courseId));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     foreach ($rows as $row) {
