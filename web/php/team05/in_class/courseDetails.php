@@ -3,7 +3,7 @@
 
   foreach ($_GET as $var) {
     $courseId = htmlspecialchars($var);
-    echo "$var<br>";
+    // echo "$var<br>";
   }
 
   $name = "";
@@ -31,7 +31,7 @@
 </head>
 <body>
   <?php 
-    "<h1>Showing notes for $name</h1>"
+    "<h1>Showing notes for " . $name . "</h1>"
    ?>
 </body>
 </html>
