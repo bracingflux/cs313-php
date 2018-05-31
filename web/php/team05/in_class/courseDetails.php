@@ -37,6 +37,7 @@
      <input type="date" name="date"><br>     
      <textarea name="content" placeholder="Enter note here"></textarea>
      <input type="hidden" value="<?php echo $courseId; ?>" name="courseId">
+     <button type="submit">Submit Note</button>
    </form>
 </body>
 </html>
