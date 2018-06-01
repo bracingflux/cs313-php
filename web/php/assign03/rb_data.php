@@ -13,8 +13,8 @@
 		$stmt->execute(array(':name' => $rb));
 		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		foreach ($rows as $row) {
-			echo "Name: " . $row['name'] . "\n\nDescription: " . $row['description'] . "\n\nType: " . $row['type']
-			. "\n\nBrand: " . $row['brand'];
+			echo "<p>Name: " . $row['name'] . "\n\nDescription: " . $row['description'] . "\n\nType: " . $row['type']
+			. "\n\nBrand: " . $row['brand'] . "</p>";
 			$id = $row['id'];
 		}
 
@@ -22,7 +22,7 @@
 		$stmt->execute(array(':id' => $id));
 		$comment_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if (count($comment_rows) > 0) {
-			echo "\n\nComments:\n\n";
+			echo "<p>\n\nComments:\n\n</p>";
 			if (isset($_SESSION["userId"])) {
 				echo "<form>
 						<textarea name='comment' placeholder='Enter your comment here'></textarea><br>
@@ -33,7 +33,7 @@
 
 		foreach ($comment_rows as $row) {			
 			$time = strtotime($row['timestamp']);			
-			echo  "\"" . $row['text'] . "\" " . date("m-d-Y h:i A", $time) . "\n\n-" . $row['display_name'] . "\n\n";
+			echo  "<p>\"" . $row['text'] . "\" " . date("m-d-Y h:i A", $time) . "\n\n-" . $row['display_name'] . "\n\n</p>";
 		}
 	}
 	else {

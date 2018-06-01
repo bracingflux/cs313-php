@@ -40,7 +40,7 @@
 
 	<div id="dialog-form" title="Soda Info">
 		<div class="loader"></div>
-		<p id="loaded_rb"></p>	    
+		<div id="loaded_rb"></div>	    
 	</div>
 
 
