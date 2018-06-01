@@ -378,7 +378,7 @@ button.log-click {
 }
 
 #current_user {
-	float: right;
+	float: left;
 	font-family: Verdana;
 	color: white;
 	text-align: right;
