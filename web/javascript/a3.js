@@ -63,14 +63,18 @@ $(function () {
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
-    alert(serializedData);
     
     $.ajax({  
       type: 'post',
       url: 'check_user.php',
       data: serializedData,
       success: function (response) {
-        alert(response);
+        if (response.includes("-1")) {
+          alert("Username or password incorrect. Please try again");
+        }
+        else {
+          alert(response);
+        }
         // $('#loaded_rb').text(response);
       },
       complete: function () {
@@ -83,9 +87,6 @@ $(function () {
 });
 
 var modal = document.getElementById('id01');
-/*find( "form" ).on( "submit", function( event ) {
-      event.preventDefault();
-});*/
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
