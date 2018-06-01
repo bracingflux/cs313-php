@@ -74,7 +74,8 @@ $(function () {
         }
         else {
           $('#id01').hide();
-          $('.input1').val('');                    
+          $('.input1').val('');
+          $('#current_user').text(response);                    
           // alert(response);
         }
         // $('#loaded_rb').text(response);
