@@ -25,7 +25,7 @@
 			echo "<p>Comments:\n</p>";
 			if (isset($_SESSION["userId"])) {
 				echo "<form>
-						<textarea name='comment' placeholder='Enter your comment here'></textarea><br>
+						<textarea name='comment' class='comment_box' placeholder='Enter your comment here'></textarea><br>
 						<button type='submit' class='comment_submit' name='Send Comment'>Send Comment</button>
 					  </form>";
 			}
@@ -33,7 +33,7 @@
 
 		foreach ($comment_rows as $row) {			
 			$time = strtotime($row['timestamp']);			
-			echo  "<div class='container_message'><p>\"" . $row['text'] . "\" <span class='time-right'>" . date("m-d-Y h:i A", $time) . "</span>" . "\n\n-" . $row['display_name'] . "\n\n</p></div>";
+			echo  "<div class='container_message'><p>\"" . $row['text'] . "\"\n\n-" . $row['display_name'] . "<span class='time-right'>" . date("h:i A", $time) . "</span>" . "</p></div>";
 		}
 	}
 	else {

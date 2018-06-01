@@ -379,3 +379,8 @@ button.log-click {
     float: right;
     color: #aaa;
 }
+
+.comment_box {
+	width: 80%;
+	margin: auto 5%;
+}
