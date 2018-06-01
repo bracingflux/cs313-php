@@ -54,6 +54,31 @@
 
 });
 
+$(function () {
+
+  $('.login_form').on('submit', function (e) {
+
+    e.preventDefault();
+    var $form = $(this);
+    var $inputs = $form.find("input, select, button, textarea");
+    var serializedData = $form.serialize();
+    
+    $.ajax({  
+      type: 'post',
+      url: 'check_user.php',
+      data: serializedData,
+      success: function (response) {
+        alert(response);
+        // $('#loaded_rb').text(response);
+      },
+      complete: function () {
+        // $('.loader').hide();
+      }             
+    });
+
+  });
+
+});
 
 var modal = document.getElementById('id01');
 
