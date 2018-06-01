@@ -73,7 +73,7 @@ $(function () {
           alert("Username or password incorrect. Please try again");
         }
         else {
-          $('#id01').fadeOut();
+          $('#id01').hide();
           $('.input1').val('');                    
           // alert(response);
         }
