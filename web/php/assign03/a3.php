@@ -1,6 +1,5 @@
 <?php  
-	session_start();
-	require('load_db.php');
+	session_start();	
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -11,8 +10,8 @@
 	<link rel="stylesheet" href="/resources/demos/style.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
-	<script type="text/javascript" src="../../javascript/a3.js"></script>
-	<link rel="stylesheet" type="text/css" href="../../css/a3.css">
+	<!-- <script type="text/javascript" src="../../javascript/a3.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/a3.css"> -->
 	<title>Root Beer Revelry</title>	
 </head>
 <body>
@@ -22,7 +21,9 @@
 	<div id="banner">
 		<img src="../../photos/revelry.jpg" class="center" alt="Root Beer Revelry banner">
 		<p id="current_user">
-		<?php 
+		<?php
+			require('load_db.php');
+			 
 			if (isset($_SESSION["userId"])) {
 				$stmt = $db->prepare('SELECT display_name FROM users WHERE id=:id');
 				$stmt->execute(array(':id' => $_SESSION["userId"]));
