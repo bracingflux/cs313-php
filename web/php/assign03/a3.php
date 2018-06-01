@@ -1,5 +1,6 @@
 <?php  
 	session_start();
+	require('load_db.php');
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -64,8 +65,7 @@
 	  </form>
 	</div>
 
-	<?php
-	require('load_db.php');
+	<?php	
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
 		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
