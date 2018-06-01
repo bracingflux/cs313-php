@@ -10,7 +10,7 @@
 		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if (count($rows) > 0) {
 			foreach ($rows as $row) {
-				echo "Welcome " . $row['displayname'] . "!";
+				echo "Welcome " . $row['display_name'] . "!";
 			}
 		}
 		else {
