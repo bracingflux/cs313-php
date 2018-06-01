@@ -57,7 +57,7 @@
 $(function () {
 
 
-  $('.login_form').on('submit', function (e) {
+  $('#login_form').on('submit', function (e) {
 
     e.preventDefault();
     var $form = $(this);
@@ -83,9 +83,9 @@ $(function () {
 });
 
 var modal = document.getElementById('id01');
-var form1 = dialog.find( "form" ).on( "submit", function( event ) {
+/*find( "form" ).on( "submit", function( event ) {
       event.preventDefault();
-    });
+});*/
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
