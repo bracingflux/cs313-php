@@ -368,7 +368,7 @@ span.psw {
 }
 
 button.log-click {
-	float: left;
+	/*float: left;*/
 	border-radius: 3px;	
 }
 
