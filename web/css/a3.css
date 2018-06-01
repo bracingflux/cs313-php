@@ -378,10 +378,10 @@ button.log-click {
 }
 
 #current_user {
-	float: right;
+	/*float: right;*/
 	font-family: Verdana;
 	color: white;
 	text-align: right;
 	background: orange;
-	margin-left: 99%;
+	/*margin-left: 99%;*/
 }
