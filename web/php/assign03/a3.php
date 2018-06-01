@@ -65,6 +65,12 @@
 	  </form>
 	</div>
 
+
+
+	<form class='commentSubmit'><textarea name='comment' class='comment_box' placeholder='Enter your comment here'></textarea><button type='submit'>Send Comment</button></form>;
+	
+
+
 	<?php	
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
