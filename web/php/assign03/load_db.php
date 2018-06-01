@@ -1,3 +1,4 @@
+<script type="text/javascript" src="../../javascript/a3.js"></script>
 <?php 
 	$dbUrl = getenv('HEROKU_POSTGRESQL_AMBER_URL');		
 	if (empty($dbUrl)) {
