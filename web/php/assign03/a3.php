@@ -20,7 +20,7 @@
 		<p class="def">
 			rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.
 		</p>
-		<button class="log-click" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		<button class="log-click" onclick="document.getElementById('id01').style.display='block'">Login</button>
 	</div>
 
 	<div id="dialog-form" title="Soda Info">
@@ -49,7 +49,7 @@
 	      </label> -->
 	    </div>
 
-	    <div class="container" style="background-color:#f1f1f1">
+	    <div class="container" id="cont-1">
 	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
 	      <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
 	    </div>

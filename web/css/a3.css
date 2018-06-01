@@ -370,4 +370,9 @@ span.psw {
 button.log-click {
 	float: left;
 	border-radius: 3px;
+	margin: 0 0 2% 2%;
+}
+
+#cont-1 {
+	background-color: #f1f1f1;
 }
