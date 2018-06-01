@@ -93,12 +93,13 @@ $(function () {
 $(function () {
 
 
-  $('.comment_submit').on('submit', function (e) {
+  $('.commentSubmit').on('submit', function (e) {
 
     e.preventDefault();
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
+    alert(serializedData);
     
     $.ajax({  
       type: 'post',

@@ -26,7 +26,7 @@
 			echo "<p>Comments:\n</p>";
 			if (isset($_SESSION["userId"])) {
 				$saved_id = $_SESSION["userId"];
-				echo "<form class='comment_submit'>
+				echo "<form class='commentSubmit'>
 						<textarea name='comment' class='comment_box' placeholder='Enter your comment here'></textarea><br>
 						<button type='submit'>Send Comment</button>
 					  </form>";
