@@ -17,9 +17,9 @@
 <body>
 
 	<a href="https://www.facebook.com/Root-Beer-Revelry-181821778540286/" target="_blank" class="fa fa-facebook" id="shadow"></a>
-	<a href="https://twitter.com/rootbeerrevelry?lang=en" class="fa fa-twitter" target="_blank" id="shadow"></a>	
+	<a href="https://twitter.com/rootbeerrevelry?lang=en" class="fa fa-twitter" target="_blank" id="shadow"></a>
+	<p id="current_user">User</p>	
 	<div id="banner">
-		<p id="current_user">User</p>
 		<img src="../../photos/revelry.jpg" class="center" alt="Root Beer Revelry banner">
 		<button class="log-click" onclick="document.getElementById('id01').style.display='block'">Login</button>						
 		<p class="def">rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.</p>
