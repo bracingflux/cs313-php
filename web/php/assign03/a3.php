@@ -20,6 +20,7 @@
 		<p class="def">
 			rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.
 		</p>
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 	</div>
 
 	<div id="dialog-form" title="Soda Info">
@@ -28,8 +29,6 @@
 	</div>
 
 
-
-	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
 	<div id="id01" class="modal">
   
