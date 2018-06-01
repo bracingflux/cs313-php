@@ -74,7 +74,6 @@ $(function () {
         }
         else {
           $('#id01').fadeOut();
-          $('.i1')val('');
           alert(response);
         }
         // $('#loaded_rb').text(response);
