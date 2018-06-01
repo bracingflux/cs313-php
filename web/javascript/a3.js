@@ -73,8 +73,8 @@ $(function () {
           alert("Username or password incorrect. Please try again");
         }
         else {
-          $('.input1').val('');          
           $('#id01').fadeOut();
+          $('.input1').val('');                    
           // alert(response);
         }
         // $('#loaded_rb').text(response);
