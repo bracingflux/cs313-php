@@ -23,7 +23,8 @@
 	</div>
 
 	<div id="dialog-form" title="Soda Info">
-	  <p id="loaded_rb"></p>	    
+		<div class="loader"></div>
+		<p id="loaded_rb"></p>	    
 	</div>
 
 	<?php
