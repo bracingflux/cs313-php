@@ -380,4 +380,6 @@ button.log-click {
 #current_user {
 	float: right;
 	font-family: Verdana;
+	color: white;
+	text-align: right;
 }
