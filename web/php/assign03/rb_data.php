@@ -36,10 +36,11 @@
 		}
 
 		foreach ($comment_rows as $row) {
-			$time = $row['timestamp'];
-			$splitTime = explode(" ", $time);
-			$time = $splitTime[0];
-			echo  "\"" . $row['text'] . "\" " . $time . "\n\n- " . $row['display_name'] . "\n\n";
+			// $time = $row['timestamp'];
+			$time = strtotime($row['timestamp']);
+			// $splitTime = explode(" ", $time);
+			// $time = $splitTime[0];
+			echo  "\"" . $row['text'] . "\" " . date("m-d-Y", $time) . "\n\n-" . $row['display_name'] . "\n\n";
 		}
 	}
 	else {
