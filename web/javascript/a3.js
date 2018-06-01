@@ -42,7 +42,7 @@
       url: 'rb_data.php',
       data: serializedData,
       success: function (response) {
-        $('#loaded_rb').text(response);
+        // $('#loaded_rb').text(response);
       },
       complete: function () {
         // $('.loader').hide();
