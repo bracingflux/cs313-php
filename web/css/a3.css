@@ -376,3 +376,8 @@ button.log-click {
 #cont-1 {
 	background-color: #f1f1f1;
 }
+
+#current_user {
+	float: right;
+	font-family: Verdana;
+}
