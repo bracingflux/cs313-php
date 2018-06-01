@@ -44,7 +44,7 @@
       data: serializedData,
       success: function (response) {
         // $('#loaded_rb').text(response);
-        $('#loaded_rb').val(response);
+        $('#loaded_rb').html(response);
       },
       complete: function () {
         $('.loader').hide();
