@@ -14,6 +14,7 @@
       },
       close: function() {
         $('#loaded_rb').text("");
+        $('.loader').show();
       }
     });
  
