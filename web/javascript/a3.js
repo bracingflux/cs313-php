@@ -43,7 +43,10 @@
       data: serializedData,
       success: function (response) {
         $('#loaded_rb').text(response);
-      }
+      },
+      error: function (XMLHttpRequest, textStatus, errorThrown) {
+        alert("not ready yet");
+      }             
     });
 
   });
