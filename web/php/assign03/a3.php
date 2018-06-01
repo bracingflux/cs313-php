@@ -30,7 +30,7 @@
 
 
 	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-	
+
 	<div id="id01" class="modal">
   
 	  <form class="modal-content animate" action="/action_page.php">
@@ -70,7 +70,7 @@
 		echo "<p id='rbName'>" . $row['name'] ."</p>";
 		echo "<form class='rbForm'>";
 		echo "<button type='submit' class='view_rb'>More info</button>";
-		echo "<input type='text' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></form></div>";
+		echo "<input type='hidden' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></form></div>";
 	}		
 	?>
 </body>
