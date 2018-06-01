@@ -20,7 +20,7 @@
 		<p class="def">
 			rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.
 		</p>
-		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		<button class="log-click" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 	</div>
 
 	<div id="dialog-form" title="Soda Info">
@@ -31,11 +31,9 @@
 
 
 	<div id="id01" class="modal">
-  
 	  <form class="modal-content animate" action="/action_page.php">
 	    <div class="imgcontainer">
 	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-	      <img src="img_avatar2.png" alt="Avatar" class="avatar">
 	    </div>
 
 	    <div class="container">
@@ -46,14 +44,14 @@
 	      <input type="password" placeholder="Enter Password" name="psw" required>
 	        
 	      <button type="submit" class="login">Login</button>
-	      <label>
+	      <!-- <label>
 	        <input type="checkbox" checked="checked" name="remember"> Remember me
-	      </label>
+	      </label> -->
 	    </div>
 
 	    <div class="container" style="background-color:#f1f1f1">
 	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-	      <span class="psw">Forgot <a href="#">password?</a></span>
+	      <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
 	    </div>
 	  </form>
 	</div>
