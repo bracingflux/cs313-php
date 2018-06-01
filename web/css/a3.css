@@ -375,9 +375,19 @@ button.log-click {
     margin: 10px 0;
 }
 
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
 .time-right {
     float: right;
     color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
 }
 
 .comment_box {
