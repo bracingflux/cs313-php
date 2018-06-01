@@ -99,14 +99,13 @@ $(function () {
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
-    alert(serializedData);
     
     $.ajax({  
       type: 'post',
       url: 'submit_comment.php',
       data: serializedData,
       success: function (response) {
-        alert(response);        
+        alert("Success! " + response + "(Just once?)");        
         // $('#loaded_rb').text(response);
       },
       complete: function () {
