@@ -22,18 +22,18 @@
 		$stmt->execute(array(':id' => $id));
 		$comment_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if (count($comment_rows) > 0) {
-			echo "<p>\n\nComments:\n\n</p>";
+			echo "<p>Comments:\n</p>";
 			if (isset($_SESSION["userId"])) {
 				echo "<form>
 						<textarea name='comment' placeholder='Enter your comment here'></textarea><br>
-						<button type='submit' class='comment_submit' name='Send Comment'></button>
+						<button type='submit' class='comment_submit' name='Send Comment'>Send Comment</button>
 					  </form>";
 			}
 		}
 
 		foreach ($comment_rows as $row) {			
 			$time = strtotime($row['timestamp']);			
-			echo  "<p>\"" . $row['text'] . "\" " . date("m-d-Y h:i A", $time) . "\n\n-" . $row['display_name'] . "\n\n</p>";
+			echo  "<div class='container_message'><p>\"" . $row['text'] . "\" <span class='time-right'>" . date("m-d-Y h:i A", $time) . "</span>" . "\n\n-" . $row['display_name'] . "\n\n</p></div>";
 		}
 	}
 	else {
