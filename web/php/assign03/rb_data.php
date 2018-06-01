@@ -40,7 +40,7 @@
 
 			}
 			else {
-				echo  "<div class='container_message'><p>\"" . $row['text'] . "\"\n\n-" . $row['display_name'] . "<span class='time-right'>" . date("h:i A", $time) . "</span>" . "</p></div>";
+				echo  "<div class='container_message'><p>\"" . $row['text'] . "\"\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-right'>" . date("h:i A", $time) . "</span>" . "</p></div>";
 			}			
 		}
 	}
