@@ -10,8 +10,8 @@
 	<link rel="stylesheet" href="/resources/demos/style.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	
-	<!-- <script type="text/javascript" src="../../javascript/a3.js"></script>
-	<link rel="stylesheet" type="text/css" href="../../css/a3.css"> -->
+	<script type="text/javascript" src="../../javascript/a3.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/a3.css">
 	<title>Root Beer Revelry</title>	
 </head>
 <body>
