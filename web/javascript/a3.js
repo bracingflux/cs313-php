@@ -56,12 +56,14 @@
 
 $(function () {
 
+
   $('.login_form').on('submit', function (e) {
 
     e.preventDefault();
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
+    alert(serializedData);
     
     $.ajax({  
       type: 'post',
@@ -81,7 +83,9 @@ $(function () {
 });
 
 var modal = document.getElementById('id01');
-
+var form1 = dialog.find( "form" ).on( "submit", function( event ) {
+      event.preventDefault();
+    });
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
