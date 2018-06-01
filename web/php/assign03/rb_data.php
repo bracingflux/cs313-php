@@ -1,7 +1,7 @@
-<script type="text/javascript" src="../../javascript/a3.js"></script>
 <?php
 	session_start();
 	require('load_db.php');
+	require('resources.php');
 	$saved_id = "";
 
 	if (isset($_POST)) {
