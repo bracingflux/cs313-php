@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	require('load_db.php');
 
 	if (isset($_POST)) {
@@ -11,6 +12,7 @@
 		if (count($rows) > 0) {
 			foreach ($rows as $row) {
 				echo $row['display_name'];
+				$_SESSION["userId"] = $row['id'];
 			}
 		}
 		else {

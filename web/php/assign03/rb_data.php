@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	require('load_db.php');
 
 	if (isset($_POST)) {
@@ -22,6 +23,12 @@
 		$comment_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if (count($comment_rows) > 0) {
 			echo "\n\nComments:\n\n";
+			if (isset($_SESSION["userId"])) {
+				echo "<form>
+						<textarea name='comment' placeholder='Enter your comment here'></textarea><br>
+						<button type='submit' class='comment_submit' name='Send Comment'></button>
+					  </form>";
+			}
 		}
 
 		foreach ($comment_rows as $row) {			
