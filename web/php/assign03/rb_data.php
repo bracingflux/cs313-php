@@ -16,17 +16,6 @@
 			. "\n\nBrand: " . $row['brand'];
 			$id = $row['id'];
 		}
-/*
-		$stmt2 = $db->prepare('SELECT "text", "timestamp" FROM comments WHERE root_beer_id=:id');
-		$stmt2->execute(array(':id' => $id));
-		$comment_rows = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-		echo "\n\nComments:\n\n";
-		foreach ($comment_rows as $row) {
-			$time = $row['timestamp'];
-			$splitTime = explode(" ", $time);
-			$time = $splitTime[0];
-			echo  "\"" . $row['text'] . "\" " . $time . "\n\n";
-		}*/
 
 		$stmt = $db->prepare('SELECT c.text, c.timestamp, u.display_name FROM comments c INNER JOIN root_beers rb ON c.root_beer_id = rb.id INNER JOIN users u ON c.user_id = u.id WHERE rb.id =:id');
 		$stmt->execute(array(':id' => $id));
@@ -35,11 +24,8 @@
 			echo "\n\nComments:\n\n";
 		}
 
-		foreach ($comment_rows as $row) {
-			// $time = $row['timestamp'];
-			$time = strtotime($row['timestamp']);
-			// $splitTime = explode(" ", $time);
-			// $time = $splitTime[0];
+		foreach ($comment_rows as $row) {			
+			$time = strtotime($row['timestamp']);			
 			echo  "\"" . $row['text'] . "\" " . date("m-d-Y h:i A", $time) . "\n\n-" . $row['display_name'] . "\n\n";
 		}
 	}
