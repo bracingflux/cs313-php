@@ -1,1 +1,1 @@
-<!-- <script type="text/javascript" src="../../javascript/a3.js"></script> -->
+<script type="text/javascript" src="../../javascript/a3.js"></script>
