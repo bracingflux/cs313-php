@@ -108,7 +108,8 @@ $(function () {
       success: function (response) {
         var info = $('#loaded_rb').html();
         info = info + response;
-        alert(info); 
+        // alert(info);
+        $('#loaded_rb').html(info); 
         // $("#loaded_rb").load(location.href + " #loaded_rb");        
         // $('#loaded_rb').text(response);
       },
