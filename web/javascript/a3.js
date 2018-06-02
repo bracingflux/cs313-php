@@ -106,7 +106,7 @@ $(function () {
       url: 'submit_comment.php',
       data: serializedData,
       success: function (response) {
-        alert("Success! " + response + "(Just once?)");        
+        alert(response);        
         // $('#loaded_rb').text(response);
       },
       complete: function () {

@@ -23,6 +23,7 @@
 		}
 		catch(Exception $ex) {
 			echo "There was an error.";
+			echo $ex->getMessage();
 		}
 		
 		/*foreach ($_POST as $key => $value) {
