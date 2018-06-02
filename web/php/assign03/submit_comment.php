@@ -8,15 +8,14 @@
 		$user_id = htmlspecialchars($_POST["userId"]);
 
 		$timestamp = time();
-		echo "$timestamp";
-		/*$dt = new DateTime("now", new DateTimeZone('America/Denver'));
+		$dt = new DateTime("now", new DateTimeZone('America/Denver'));
 		$dt->setTimestamp($timestamp);
-		$timestamp = $dt->format('d.m.Y, H:i:s');*/
+		$timestamp = $dt->format('d.m.Y, H:i:s');
 		try {
 			$query = "INSERT INTO comments (text, timestamp, user_id, root_beer_id) VALUES (:text, :timestamp, :user_id, :root_beer_id)";
 			$statement = $db->prepare($query);
 			$statement->bindValue(":text", $comment, PDO::PARAM_STR);
-			$statement->bindValue(":timestamp", $timstamp, PDO::PARAM_STR);
+			$statement->bindValue(":timestamp", $timestamp, PDO::PARAM_STR);
 			$statement->bindValue(":user_id", $user_id, PDO::PARAM_INT);
 			$statement->bindValue(":root_beer_id", $root_beer_id, PDO::PARAM_INT);		
 			$statement->execute();
