@@ -29,7 +29,7 @@
 			echo "<textarea name='comment1' class='comment_box' placeholder='Enter your comment here'></textarea>";
 			echo "<input type='hidden' name='rbId' value='" . $id . "'></input>";
 			echo "<input type='hidden' name='userId' value='" . $saved_id . "'></input>";
-			echo "<button type='submit'>Send Comment</button>";
+			echo "<button class='sendComment' type='submit'>Send Comment</button>";
 			echo "</form>";
 		}
 

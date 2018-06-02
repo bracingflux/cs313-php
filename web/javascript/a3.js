@@ -106,7 +106,8 @@ $(function () {
       url: 'submit_comment.php',
       data: serializedData,
       success: function (response) {
-        alert(response);        
+        alert(response);
+        $(".commentSubmit").load(location.href + " .commentSubmit");        
         // $('#loaded_rb').text(response);
       },
       complete: function () {
