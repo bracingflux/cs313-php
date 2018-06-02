@@ -21,7 +21,7 @@
 			$statement->execute();
 			echo "Comment submitted! ";
 
-			$newId = $db->lastInsertId('id');
+			$newId = $db->lastInsertId();
 			echo $newId;
 			/*$stmt = $db->prepare('SELECT c.text, c.timestamp, u.display_name, u.id FROM comments c INNER JOIN root_beers rb ON c.root_beer_id = rb.id 
 				INNER JOIN users u ON c.user_id = u.id WHERE rb.id =:id AND u.id =:user_id');

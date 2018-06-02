@@ -107,7 +107,7 @@ $(function () {
       data: serializedData,
       success: function (response) {
         alert(response);
-        $("#loaded_rb").load(location.href + " #loaded_rb");        
+        // $("#loaded_rb").load(location.href + " #loaded_rb");        
         // $('#loaded_rb').text(response);
       },
       complete: function () {
