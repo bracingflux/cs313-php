@@ -13,10 +13,9 @@
 
 	//echo $userName . " " . $password;
 	try {
-		$query = 'SELECT id, username, password FROM ta07_users WHERE password=:password AND username=:username';
+		$query = 'SELECT id, username, password FROM ta07_users WHERE username=:username';
 		$statement = $db->prepare($query);
 		$statement->bindValue(":username", $userName, PDO::PARAM_STR);
-		$statement->bindValue(":password", $hashPassword, PDO::PARAM_STR);
 		$statement->execute();
 		$row = $statement->fetchAll();
 
