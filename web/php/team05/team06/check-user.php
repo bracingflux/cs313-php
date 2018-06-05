@@ -4,7 +4,6 @@
 
 	$userName = htmlspecialchars($_POST["uName"]);
 	$password = htmlspecialchars($_POST["psw"]);
-	$hashPassword = password_hash($password, PASSWORD_DEFAULT);
 	// echo "Your stuff: $userName $password";
 
 	
@@ -20,9 +19,16 @@
 		$row = $statement->fetchAll();
 
 		var_dump($row);
+
+		if (password_verify($password, $row['password'])) {
+			echo "<h1>Welcome " . $row['username'] . "!</h1>";
+		}
+		else {
+			echo "Invalid credentials";
+		}
 	}
 	catch(Exception $ex) {
-		echo "Invalid credentials";
+		echo "Failure to connect to database.";
 	}
 	
 
