@@ -19,6 +19,7 @@
 		$row = $statement->fetchAll();
 
 		var_dump($row);
+		echo  "This is the password: " . $row['password'];
 
 		if (password_verify($password, $row['password'])) {
 			echo "<h1>Welcome " . $row['username'] . "!</h1>";
