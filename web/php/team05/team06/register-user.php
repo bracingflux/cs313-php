@@ -7,6 +7,7 @@
 	$password = htmlspecialchars($_POST["psw"]);
 
 	$rptPassword = htmlspecialchars($_POST["psw-repeat"]);
+	echo "Your stuff: $username $password";
 
 	if ($password != $rptPassword) {
 	    $_SESSION["message"] = "Passwords do not Match";
@@ -22,7 +23,7 @@
 	   if ($userName == $row["username"] && $password == $row["password"])
 	   {
 	       $_SESSION["messageL"] = "You have an account already. Please login";
-	       header("Location: login.php");
+	       // header("Location: login.php");
 	       $isIN = true;
 	       break;
 	   }
@@ -43,7 +44,7 @@
 	       $_SESSION["id"] = $db->lastInsertId('ta07_users_id_seq');
 
 	       echo $_SESSION["id"];
-	       header("Location: welcome.php");
+	       // header("Location: welcome.php");
 	       echo "<h1>Done!</h1>";
 	         break;
 	   }
