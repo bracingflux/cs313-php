@@ -16,10 +16,10 @@
 		$statement = $db->prepare($query);
 		$statement->bindValue(":username", $userName, PDO::PARAM_STR);
 		$statement->execute();
-		$row = $statement->fetchAll();
+		$row = $statement->fetch();
 
 		var_dump($row);
-		echo  "This is the password: " . $row['password'];
+		echo  "This is the password: " . $row["password"];
 
 		if (password_verify($password, $row['password'])) {
 			echo "<h1>Welcome " . $row['username'] . "!</h1>";
