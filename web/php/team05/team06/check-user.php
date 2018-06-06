@@ -18,11 +18,12 @@
 		$statement->execute();
 		$row = $statement->fetch();
 
-		var_dump($row);
+		// var_dump($row);
 		echo  "This is the password: " . $row["password"];
 
 		if (password_verify($password, $row['password'])) {
-			echo "<h1>Welcome " . $row['username'] . "!</h1>";
+	       header("Location: welcome.php");			
+			// echo "<h1>Welcome " . $row['username'] . "!</h1>";
 		}
 		else {
 			echo "Invalid credentials";
