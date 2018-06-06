@@ -36,7 +36,8 @@
 		 <label>
 		   <input type="checkbox" checked="checked" name="remember" style=“margin-bottom:15px”> Remember me
 		 </label>
-       <button type="submit" class="btn btn-primary btn-md signupbtn">Sign Up</button> 
+       <button type="submit" class="btn btn-primary btn-md signupbtn">Sign Up</button>
+       <a href="signUp.php">Sign up page</a> 
 	</div>
 
  </form>

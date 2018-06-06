@@ -18,16 +18,23 @@
  <?php include('headerA.php');?>
 
 
-
+ <?php 
+ 	if (isset($_SESSION['user_Name'])) {
+ 		echo "<h1>Welcome ". $_SESSION['user_Name'] . "!</h1>";
+ 	}
+ 	else {
+	       header("Location: signIn.php");			 		
+ 	} 
+ ?>
 
 
  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="dataForm" >
 
    <div class="containerSign">
 
-     <h1>Search database</h1>
+     <!-- <h1>Search database</h1> -->
 
-     <p>Please fill in this form to search for information.</p>
+     <!-- <p>Please fill in this form to search for information.</p> -->
 
    
 

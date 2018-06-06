@@ -46,7 +46,7 @@
 
 	       // echo $_SESSION["id"];
 	       header("Location: welcome.php");
-	       echo "<h1>Done!</h1>";
+	       // echo "<h1>Done!</h1>";
 	         break;
 	   }
 	   die();

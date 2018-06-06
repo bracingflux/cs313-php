@@ -26,7 +26,7 @@
 			// echo "<h1>Welcome " . $row['username'] . "!</h1>";
 		}
 		else {
-			echo "Invalid credentials";
+			echo "<p>Invalid credentials</p>";
 		}
 	}
 	catch(Exception $ex) {
