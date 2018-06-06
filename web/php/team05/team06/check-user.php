@@ -22,7 +22,7 @@
 
 		if (password_verify($password, $row['password'])) {
 			echo "<h1>Welcome " . $row['username'] . "!</h1>";					
-	       	// header("Location: welcome.php");			
+	       	header("Location: welcome.php");			
 		}
 		else {
 			echo "<p>Invalid credentials</p>";
