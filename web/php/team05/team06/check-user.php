@@ -21,8 +21,8 @@
 		// var_dump($row);
 
 		if (password_verify($password, $row['password'])) {
-	       header("Location: welcome.php");			
-			// echo "<h1>Welcome " . $row['username'] . "!</h1>";
+			echo "<h1>Welcome " . $row['username'] . "!</h1>";					
+	       	header("Location: welcome.php");			
 		}
 		else {
 			echo "<p>Invalid credentials</p>";
