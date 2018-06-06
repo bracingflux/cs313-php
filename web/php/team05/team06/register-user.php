@@ -8,7 +8,6 @@
 
 	$rptPassword = htmlspecialchars($_POST["psw-repeat"]);
 	$hashPassword = password_hash($password, PASSWORD_DEFAULT);
-	// echo "Your stuff: $userName $password";
 
 	if ($password != $rptPassword) {
 	    $_SESSION["message"] = "Passwords do not Match";
@@ -17,10 +16,8 @@
 
 	$isIN = false;
 
-	//echo $userName . " " . $password;
 
 	 foreach ($db->query('SELECT id, username, password FROM ta07_users') as $row) {
-	    //echo $row["username"] . " " . $row["password"];  
 	   if ($userName == $row["username"] && $password == $row["password"])
 	   {
 	       $_SESSION["messageL"] = "You have an account already. Please login";
@@ -44,9 +41,7 @@
 
 	       $_SESSION["id"] = $db->lastInsertId('ta07_users_id_seq');
 
-	       // echo $_SESSION["id"];
 	       header("Location: welcome.php");
-	       // echo "<h1>Done!</h1>";
 	         break;
 	   }
 	   die();

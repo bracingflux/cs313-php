@@ -3,14 +3,10 @@
 	session_start();
 
 	$userName = htmlspecialchars($_POST["uName"]);
-	$password = htmlspecialchars($_POST["psw"]);
-	// echo "Your stuff: $userName $password";
-
-	
+	$password = htmlspecialchars($_POST["psw"]);	
 
 	$isIN = false;
 
-	//echo $userName . " " . $password;
 	try {
 		$query = 'SELECT id, username, password FROM ta07_users WHERE username=:username';
 		$statement = $db->prepare($query);
@@ -18,12 +14,9 @@
 		$statement->execute();
 		$row = $statement->fetch();
 
-		// var_dump($row);
-		echo  "This is the password: " . $row["password"];
 
 		if (password_verify($password, $row['password'])) {
 	       header("Location: welcome.php");			
-			// echo "<h1>Welcome " . $row['username'] . "!</h1>";
 		}
 		else {
 			echo "<p>Invalid credentials</p>";
