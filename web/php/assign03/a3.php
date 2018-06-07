@@ -63,10 +63,8 @@
 
 	    <div class="container" id="cont-1">
 	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-	    </div>
-	    <div class="container" id="cont-1">
-	      <button type="button" onclick="document.getElementById('id01').style.display='none'" style="float: right;" class="cancelbtn">Sign Up</button>
-	    </div>
+	      <button type="button" onclick="document.getElementById('id01').style.display='none'" style="float: right;" class="signUpbtn">Sign Up</button>	      
+	    </div>	    
 	  </form>
 	</div>
 
