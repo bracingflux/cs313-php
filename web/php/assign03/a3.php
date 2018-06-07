@@ -63,7 +63,7 @@
 
 	    <div class="container" id="cont-1">
 	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="registerbtn">Sign Up</button>	      
+	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class='registerbtn'>Sign Up</button>	      
 	    </div>	    
 	  </form>
 	</div>
