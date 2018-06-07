@@ -281,7 +281,7 @@ button:hover {
 }
 
 #registerbtn {
-    background-color: #7aa5f0;
+    background-color: #6396ef;
     float: right;    
 }
 
@@ -364,7 +364,7 @@ button.log-click {
 
 #cont-1 {
 	background-color: #f1f1f1;
-  min-width: 200px;
+  min-width: 1000px;
 }
 
 #current_user {
