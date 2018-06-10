@@ -175,4 +175,24 @@ function showSignIn() {
   document.getElementById('id01').style.display='block';
   document.getElementById('id02').style.display='none';  
 }
+
+function verifyPassword() {
+  var pass1 = document.getElementById('pass1').value;
+  var pass2 = document.getElementById('pass2').value;
+  if (pass1 && pass2) {
+    var result = pass1.localeCompare(pass2);
+    if (result == 0) {
+      document.getElementById('passVerify').style.display = 'none';
+      return true;
+    }
+    else {
+      document.getElementById('passVerify').style.display = 'block';
+      return false;      
+    }
+  }
+  else {
+    return false;
+  }
+  
+}
    
