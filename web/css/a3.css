@@ -163,7 +163,7 @@ input.text {
 }
 
 .input1 {
-  
+
 }
 
 fieldset { 
@@ -310,6 +310,12 @@ img.avatar {
 span.psw {
     float: right;
     padding-top: 16px;
+}
+
+button.btnRemove {
+  font-size:24px; 
+  color: red;
+  max-width: 10%;
 }
 
 /* The Modal (background) */
