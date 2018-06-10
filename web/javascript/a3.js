@@ -137,26 +137,34 @@ $(function () {
 
     e.preventDefault();
     e.stopImmediatePropagation();
-    var $form = $(this);
-    var $inputs = $form.find("input, select, button, textarea");
-    var serializedData = $form.serialize();
+    var comment = document.getElementById('commentText').value;
+    if (comment) {
+      document.getElementById('commentEmpty').style.display = 'none';       
+      var $form = $(this);
+      var $inputs = $form.find("input, select, button, textarea");
+      var serializedData = $form.serialize();
+      
+      $.ajax({  
+        type: 'post',
+        url: 'submit_comment.php',
+        data: serializedData,
+        success: function (response) {
+          var info = $('#loaded_rb').html();
+          info = info + response;
+          // alert(info);
+          $('#loaded_rb').html(info); 
+          // $("#loaded_rb").load(location.href + " #loaded_rb");        
+          // $('#loaded_rb').text(response);
+        },
+        complete: function () {
+          // $('.loader').hide();
+        }             
+      });
+    }
+    else {
+      document.getElementById('commentEmpty').style.display = 'block'; 
+    }    
     
-    $.ajax({  
-      type: 'post',
-      url: 'submit_comment.php',
-      data: serializedData,
-      success: function (response) {
-        var info = $('#loaded_rb').html();
-        info = info + response;
-        // alert(info);
-        $('#loaded_rb').html(info); 
-        // $("#loaded_rb").load(location.href + " #loaded_rb");        
-        // $('#loaded_rb').text(response);
-      },
-      complete: function () {
-        // $('.loader').hide();
-      }             
-    });
 
   });
 

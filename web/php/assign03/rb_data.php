@@ -26,7 +26,8 @@
 		if (isset($_SESSION["userId"])) {
 			$saved_id = $_SESSION["userId"];
 			echo "<form class='commentSubmit'>";
-			echo "<textarea name='comment1' class='comment_box' placeholder='Enter your comment here'></textarea>";
+			echo "<textarea name='comment1' id='commentText' class='comment_box' placeholder='Enter your comment here'></textarea>";	      
+			echo "<label class='hidden1' id='commentEmpty'><b>Comment is empty</b></label>";
 			echo "<input type='hidden' name='rbId' value='" . $id . "'></input>";
 			echo "<input type='hidden' name='userId' value='" . $saved_id . "'></input>";
 			echo "<button class='sendComment' type='submit'>Send Comment</button>";
