@@ -24,7 +24,7 @@
 		}
 		catch(Exception $ex) {
 			echo "User account already exists!";
-			$isUser = true;					
+			// $isUser = true;					
 		}			
 		if (!$isUser) {
 			try {
@@ -39,7 +39,7 @@
 				// $_SESSION["userId"] = $userName;		
 			}
 			catch(Exception $ex) {
-				echo "Error registering user";
+				echo $ex->getMessage();
 			}
 						
 		}
