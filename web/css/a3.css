@@ -315,7 +315,8 @@ span.psw {
 button.btnRemove {
   font-size:24px; 
   color: red;
-  max-width: 10%;
+  max-width: 15%;
+  max-height: 30px;
 }
 
 /* The Modal (background) */
