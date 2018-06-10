@@ -5,11 +5,10 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -55,7 +54,7 @@
 
 
 	<!-- sign-in window -->
-	<div id="id01" class="modal">
+	<div id="id01" class="modal1">
 	  <form class="modal-content animate" id="login_form">
 	    <div class="imgcontainer">
 	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -77,7 +76,7 @@
 	</div>
 
 	<!-- sign-up window -->	
-	<div id="id02" class="modal">
+	<div id="id02" class="modal1">
 	  <form class="modal-content animate" id="signup_form">
 	    <div class="imgcontainer">
 	      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>

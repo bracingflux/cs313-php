@@ -163,7 +163,7 @@ input.text {
 }
 
 .input1 {
-  
+
 }
 
 fieldset { 
@@ -313,7 +313,7 @@ span.psw {
 }
 
 /* The Modal (background) */
-.modal {
+.modal1 {
 	font-family: Verdana;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
