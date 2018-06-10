@@ -76,8 +76,43 @@ $(function () {
           $('#id01').hide();
           $('.input1').val('');
           $('#current_user').text(response);                    
-          // alert(response);
+          alert(response);
         }
+        // $('#loaded_rb').text(response);
+      },
+      complete: function () {
+        // $('.loader').hide();
+      }             
+    });
+
+  });
+
+});
+
+$(function () {
+
+  $('#signup_form').on('submit', function (e) {
+
+    e.preventDefault();
+    var $form = $(this);
+    var $inputs = $form.find("input, select, button, textarea");
+    var serializedData = $form.serialize();
+    
+    $.ajax({  
+      type: 'post',
+      url: 'register_user.php',
+      data: serializedData,
+      success: function (response) {
+        alert(response);
+        /*if (response.includes("already exists")) {
+          alert("Account already exists.");
+        }
+        else {
+          $('#id01').hide();
+          $('.input1').val('');
+          $('#current_user').text(response);                    
+          alert(response);
+        }*/
         // $('#loaded_rb').text(response);
       },
       complete: function () {
@@ -127,5 +162,10 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+function showSignUp() {
+  document.getElementById('id02').style.display='block';
+  document.getElementById('id01').style.display='none';
 }
    

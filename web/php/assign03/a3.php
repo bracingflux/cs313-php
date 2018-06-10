@@ -46,7 +46,7 @@
 	</div>
 
 
-
+	<!-- sign-in window -->
 	<div id="id01" class="modal">
 	  <form class="modal-content animate" id="login_form">
 	    <div class="imgcontainer">
@@ -59,6 +59,30 @@
 	      <label for="psw"><b>Password</b></label>
 	      <input type="password" class="input1" placeholder="Enter Password" name="psw" required>	        
 	      <button type="submit" class="login">Login</button>	      
+	    </div>
+
+	    <div class="container" id="cont-1">
+	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	      <button type="button" name="signUp" onclick="showSignUp()" id="registerbtn" class='cancelbtn'>Sign Up</button> <!-- document.getElementById('id01').style.display='none' -->	      
+	    </div>	    
+	  </form>
+	</div>
+
+	<!-- sign-up window -->	
+	<div id="id02" class="modal">
+	  <form class="modal-content animate" id="signup_form">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label for="uname"><b>Username</b></label>
+	      <input type="text" class="input1" placeholder="Enter Username" name="uname" required>
+	      <label for="psw"><b>Password</b></label>
+	      <input type="password" class="input1" placeholder="Enter Password" name="psw" required>
+	      <label for="dName"><b>Display Name</b></label>
+	      <input type="text" class="input1" placeholder="Enter Display Name" name="dName" required>	        
+	      <button type="submit" class="login">Sign Up</button>	      
 	    </div>
 
 	    <div class="container" id="cont-1">

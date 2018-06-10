@@ -6,7 +6,28 @@
 		$username = htmlspecialchars($_POST["uname"]);
 		$password = htmlspecialchars($_POST["psw"]);
 
-		$stmt = $db->prepare('SELECT id, display_name FROM users WHERE username=:username AND password=:password');
+		try {
+			$query = 'SELECT id, username, password FROM users WHERE username=:username';
+			$statement = $db->prepare($query);
+			$statement->bindValue(":username", $username, PDO::PARAM_STR);
+			$statement->execute();
+			$row = $statement->fetch();
+
+			if (password_verify($password, $row['password'])) {
+		       $_SESSION["userId"] = $row['id'];
+		       echo $row['username'];								
+		       	// header("Location: welcome.php");			
+			}
+			else {
+				echo "Invalid credentials";
+			}
+		}
+		catch(Exception $ex) {
+			echo "Failure to connect to database.";
+		}
+		   die();
+
+		/*$stmt = $db->prepare('SELECT id, display_name FROM users WHERE username=:username AND password=:password');
 		$stmt->execute(array(':username' => $username, ':password' => $password));
 		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if (count($rows) > 0) {
@@ -17,7 +38,7 @@
 		}
 		else {
 			echo "-1";
-		}
+		}*/
 	}
 	else {
 		echo "POST not set..";
