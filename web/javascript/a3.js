@@ -95,32 +95,36 @@ $(function () {
   $('#signup_form').on('submit', function (e) {
 
     e.preventDefault();
-    e.stopImmediatePropagation();    
-    var $form = $(this);
-    var $inputs = $form.find("input, select, button, textarea");
-    var serializedData = $form.serialize();
-    
-    $.ajax({  
-      type: 'post',
-      url: 'register_user.php',
-      data: serializedData,
-      success: function (response) {
-        // alert(response);
-        if (response.includes("already exists")) {
-          alert("Account already exists.");
-        }
-        else {
-          $('#id02').hide();
-          $('.input1').val('');
-          $('#current_user').text(response);                    
+    e.stopImmediatePropagation();
+    var passwordCheck = verifyPassword();
+    if (passwordCheck) {
+      var $form = $(this);
+      var $inputs = $form.find("input, select, button, textarea");
+      var serializedData = $form.serialize();
+      
+      $.ajax({  
+        type: 'post',
+        url: 'register_user.php',
+        data: serializedData,
+        success: function (response) {
           // alert(response);
-        }
-        // $('#loaded_rb').text(response);
-      },
-      complete: function () {
-        // $('.loader').hide();
-      }             
-    });
+          if (response.includes("already exists")) {
+            alert("Account already exists.");
+          }
+          else {
+            $('#id02').hide();
+            $('.input1').val('');
+            $('#current_user').text(response);                    
+            // alert(response);
+          }
+          // $('#loaded_rb').text(response);
+        },
+        complete: function () {
+          // $('.loader').hide();
+        }             
+      });      
+    }    
+    
 
   });
 
