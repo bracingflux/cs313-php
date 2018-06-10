@@ -30,7 +30,7 @@
 		}			
 		if (!$isUser) {
 			try {
-				$query = "INSERT INTO users (username, password, display_name) VALUES (:username, :password, :display_name)";
+				$query = "INSERT INTO users (username, password, display_name, is_admin) VALUES (:username, :password, :display_name, false)";
 				$statement = $db->prepare($query);
 				$statement->bindValue(":username", $username, PDO::PARAM_STR);
 				$statement->bindValue(":password", $hashPassword, PDO::PARAM_STR);
