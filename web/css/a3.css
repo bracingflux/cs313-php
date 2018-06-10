@@ -319,6 +319,10 @@ button.btnRemove {
   max-height: 20%;*/
 }
 
+.fa fa-trash {
+  float: right;
+}
+
 /* The Modal (background) */
 .modal {
 	font-family: Verdana;
