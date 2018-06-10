@@ -170,4 +170,9 @@ function showSignUp() {
   document.getElementById('id02').style.display='block';
   document.getElementById('id01').style.display='none';
 }
+
+function showSignIn() {
+  document.getElementById('id01').style.display='block';
+  document.getElementById('id02').style.display='none';  
+}
    

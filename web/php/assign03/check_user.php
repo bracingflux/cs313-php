@@ -7,7 +7,7 @@
 		$password = htmlspecialchars($_POST["psw"]);
 
 		try {
-			$query = 'SELECT id, username, password FROM users WHERE username=:username';
+			$query = 'SELECT id, display_name, password FROM users WHERE username=:username';
 			$statement = $db->prepare($query);
 			$statement->bindValue(":username", $username, PDO::PARAM_STR);
 			$statement->execute();
@@ -19,7 +19,7 @@
 		       	// header("Location: welcome.php");			
 			}
 			else {
-				echo "Invalid credentials";
+				echo "Invalid credentials -1";
 			}
 		}
 		catch(Exception $ex) {

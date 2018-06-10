@@ -86,8 +86,8 @@
 	    </div>
 
 	    <div class="container" id="cont-1">
-	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-	      <button type="button" name="signUp" onclick="document.getElementById('id01').style.display='none'" id="registerbtn" class='cancelbtn'>Sign Up</button>	      
+	      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+	      <button type="button" name="signUp" onclick="showSignIn()" id="registerbtn" class='cancelbtn'>Sign In</button>	      
 	    </div>	    
 	  </form>
 	</div>
