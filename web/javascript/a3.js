@@ -191,6 +191,7 @@ function verifyPassword() {
     }
   }
   else {
+    document.getElementById('passVerify').style.display = 'none';    
     return false;
   }
   

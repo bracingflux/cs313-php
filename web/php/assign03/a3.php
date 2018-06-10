@@ -82,7 +82,7 @@
 	      <input type="password" class="input1" placeholder="Enter Password" id="pass1" name="password" required>
 	      <label for="verify_password"><b>Verifty Password</b></label>
 	      <input type="password" class="input1" placeholder="Verify Password" id="pass2" onblur="verifyPassword()" name="verifty_password" required>
-	      <label class="hidden1" id="passVerify"><b>Passwords do not match!</b></label>
+	      <p class="hidden1" id="passVerify"><b>Passwords do not match!</b></p>
 	      <label for="dName"><b>Display Name</b></label>
 	      <input type="text" class="input1" placeholder="Enter Display Name" name="displayName" required>	        
 	      <button type="submit" class="login">Sign Up</button>	      
