@@ -101,6 +101,8 @@ div.rbItem {
 
 .hidden1 {
 	display: none;
+  text-align: center;
+  color: red;
 }
 
 #loaded_rb {
