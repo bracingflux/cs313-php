@@ -38,7 +38,7 @@
 				$statement->execute();
 
 				$_SESSION["userId"] = $db->lastInsertId(/*'users_id_seq'*/);
-				echo "success!";
+				echo $displayName;
 				// $_SESSION["userId"] = $userName;		
 			}
 			catch(Exception $ex) {

@@ -105,16 +105,16 @@ $(function () {
       url: 'register_user.php',
       data: serializedData,
       success: function (response) {
-        alert(response);
-        /*if (response.includes("already exists")) {
+        // alert(response);
+        if (response.includes("already exists")) {
           alert("Account already exists.");
         }
         else {
-          $('#id01').hide();
+          $('#id02').hide();
           $('.input1').val('');
           $('#current_user').text(response);                    
-          alert(response);
-        }*/
+          // alert(response);
+        }
         // $('#loaded_rb').text(response);
       },
       complete: function () {
