@@ -45,6 +45,7 @@
       success: function (response) {
         // $('#loaded_rb').text(response);
         $('#loaded_rb').html(response);
+        $('.loader').hide();        
       },
       complete: function () {
         $('.loader').hide();
