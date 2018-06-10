@@ -76,10 +76,12 @@
 	    </div>
 
 	    <div class="container">
-	      <label for="uname"><b>Username</b></label>
+	      <label for="username"><b>Username</b></label>
 	      <input type="text" class="input1" placeholder="Enter Username" name="username" required>
-	      <label for="psw"><b>Password</b></label>
+	      <label for="password"><b>Password</b></label>
 	      <input type="password" class="input1" placeholder="Enter Password" name="password" required>
+	      <label for="verify_password"><b>Verifty Password</b></label>
+	      <input type="password" class="input1" placeholder="Verify Password" name="verifty_password" required>
 	      <label for="dName"><b>Display Name</b></label>
 	      <input type="text" class="input1" placeholder="Enter Display Name" name="displayName" required>	        
 	      <button type="submit" class="login">Sign Up</button>	      
