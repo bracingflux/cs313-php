@@ -162,6 +162,10 @@ input.text {
 	padding: .4em; 
 }
 
+.input1 {
+  max-width: 200px;
+}
+
 fieldset { 
 	padding:0; 
 	border:0; 
