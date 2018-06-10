@@ -163,7 +163,8 @@ input.text {
 }
 
 .input1 {
-  max-width: 600px;
+  max-width: 100%;
+  /*max-width: 600px;*/
 }
 
 fieldset { 
@@ -266,8 +267,8 @@ button.login {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
-    max-width: 500px;
+    max-width: 100%;
+    /*max-width: 500px;*/
     clear: both;
 }
 
