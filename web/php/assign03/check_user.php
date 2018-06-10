@@ -15,7 +15,7 @@
 
 			if (password_verify($password, $row['password'])) {
 		       $_SESSION["userId"] = $row['id'];
-		       echo $row['username'];								
+		       echo $row['display_name'];								
 		       	// header("Location: welcome.php");			
 			}
 			else {

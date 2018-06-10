@@ -77,7 +77,7 @@ $(function () {
           $('#id01').hide();
           $('.input1').val('');
           $('#current_user').text(response);                    
-          alert(response);
+          // alert(response);
         }
         // $('#loaded_rb').text(response);
       },
