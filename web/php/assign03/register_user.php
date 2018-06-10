@@ -3,11 +3,13 @@
 	require('load_db.php');
 
 	if (isset($_POST)) {
-		$username = htmlspecialchars($_POST["uname"]);
-		$password = htmlspecialchars($_POST["psw"]);
+		$username = htmlspecialchars($_POST["username"]);
+		$password = htmlspecialchars($_POST["password"]);
 		$hashPassword = password_hash($password, PASSWORD_DEFAULT);		
-		$displayName = htmlspecialchars($_POST["dName"]);
-		echo "$username $password $displayName";
+		$displayName = htmlspecialchars($_POST["displayName"]);
+		// echo "1. $username";
+		// echo " 2. $password";
+		// echo " 3. $displayName";
 		$isUser = false;		
 
 		try {
@@ -30,12 +32,13 @@
 			try {
 				$query = "INSERT INTO users (username, password, display_name) VALUES (:username, :password, :display_name)";
 				$statement = $db->prepare($query);
-				$statement->bindValue(":username", $userName, PDO::PARAM_STR);
+				$statement->bindValue(":username", $username, PDO::PARAM_STR);
 				$statement->bindValue(":password", $hashPassword, PDO::PARAM_STR);
 				$statement->bindValue(":display_name", $displayName, PDO::PARAM_STR);			
 				$statement->execute();
 
 				$_SESSION["userId"] = $db->lastInsertId(/*'users_id_seq'*/);
+				echo "success!";
 				// $_SESSION["userId"] = $userName;		
 			}
 			catch(Exception $ex) {

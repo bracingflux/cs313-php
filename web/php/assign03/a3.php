@@ -77,11 +77,11 @@
 
 	    <div class="container">
 	      <label for="uname"><b>Username</b></label>
-	      <input type="text" class="input1" placeholder="Enter Username" name="uname" required>
+	      <input type="text" class="input1" placeholder="Enter Username" name="username" required>
 	      <label for="psw"><b>Password</b></label>
-	      <input type="password" class="input1" placeholder="Enter Password" name="psw" required>
+	      <input type="password" class="input1" placeholder="Enter Password" name="password" required>
 	      <label for="dName"><b>Display Name</b></label>
-	      <input type="text" class="input1" placeholder="Enter Display Name" name="dName" required>	        
+	      <input type="text" class="input1" placeholder="Enter Display Name" name="displayName" required>	        
 	      <button type="submit" class="login">Sign Up</button>	      
 	    </div>
 
