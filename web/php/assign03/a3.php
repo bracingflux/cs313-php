@@ -35,7 +35,7 @@
 
 	<div id="banner">	
 		<img src="../../photos/revelry.jpg" class="center" alt="Root Beer Revelry banner">
-		<span style="float: right; width: 25%; background: orange; margin: 0 5% 0 1%; padding: 0;">
+		<span style="float: right; width: 25%; background: orange; margin: 1% .5% 1% 5%; padding: 0;">
 			<a href="https://www.facebook.com/Root-Beer-Revelry-181821778540286/" target="_blank" class="fa fa-facebook" id="shadow"></a>
 			<a href="https://twitter.com/rootbeerrevelry?lang=en" class="fa fa-twitter" target="_blank" id="shadow"></a>
 		</span>
