@@ -445,3 +445,7 @@ button.delBtn {
   max-width: 40px;
   max-height: 40px;
 }
+
+.material-icons {
+  float: left;
+}
