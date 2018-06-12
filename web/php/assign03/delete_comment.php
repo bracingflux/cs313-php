@@ -4,4 +4,7 @@
 			echo "$key $value<br>";
 		}
 	}
+	else {
+		echo "Post not set.";
+	}
 ?>
