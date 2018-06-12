@@ -386,7 +386,7 @@ button.log-click {
 
 #cont-1 {
 	background-color: #f1f1f1;
-  min-height: 80px;
+  min-height: 90px;
 }
 
 #current_user {
@@ -429,7 +429,7 @@ button.sendComment {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 8px 25%;
+  margin: 8px 30%;
   border: none;
   cursor: pointer;  
 }
