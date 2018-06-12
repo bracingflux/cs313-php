@@ -124,7 +124,7 @@ button.view_rb {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 60px;
+  max-width: 55px;
   /*height: auto;*/
   text-align: center;
   text-decoration: none;
