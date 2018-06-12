@@ -313,16 +313,16 @@ span.psw {
 }
 
 button.btnRemove {
-  font-size:24px; 
+  font-size: 5px; 
   color: red;
-  max-height: 40px;
+  /*max-height: 40px;*/
   /*max-width: 50%;
   max-height: 20%;*/
 }
 
 .fa fa-trash {
-  background: purple;
-  float: left;
+  /*background: purple;*/
+  /*float: left;*/
 }
 
 /* The Modal (background) */
