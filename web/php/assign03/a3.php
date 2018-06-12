@@ -126,11 +126,11 @@
 	<?php	
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
-		echo "<div class='rbItem'><button type='submit' class='view_rb'>More info</button><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
-		echo "<p id='rbName'>" . $row['name'] ."</p>";
-		echo "<form class='rbForm'>";
+		echo "<div class='rbItem'><span style='width: 50%; float: right;'><button type='submit' class='view_rb'>More info</button></span><span style='width: 50%; float: left;'<img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'></span>";
+		// echo "<p id='rbName'>" . $row['name'] ."</p>";
+		// echo "<form class='rbForm'>";
 		// echo "<button type='submit' class='view_rb'>More info</button>";
-		echo "<input type='hidden' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></form></div>";
+		// echo "<input type='hidden' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></form></div>";
 	}		
 	?>
 </body>
