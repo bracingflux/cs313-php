@@ -126,8 +126,7 @@
 	<?php	
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
-		echo "<button type='submit' class='view_rb'>More info</button>";		
-		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
+		echo "<div class='rbItem'><button type='submit' class='view_rb'>More info</button><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
 		echo "<p id='rbName'>" . $row['name'] ."</p>";
 		echo "<form class='rbForm'>";
 		// echo "<button type='submit' class='view_rb'>More info</button>";
