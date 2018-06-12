@@ -42,7 +42,6 @@
 			$statement2->bindValue(":id", $id);
 			$statement2->execute();
 			$row2 = $statement2->fetch();
-			echo "<h1>" . $row2['id'] . "</h2>";
 
 			foreach ($comment_rows as $row) {			
 				$time = strtotime($row['timestamp']);
