@@ -107,15 +107,16 @@ div.rbItem {
 	/*clear: both;*/
 }
 
-div.div1 {
-  width: 70%;
+div.infoDiv {
+  margin: 15% 1% 1% 4%;  
+  /*width: 70%;
   float: right;
   color: white;
   font-size: 1.1em;
   font-family: Verdana;
   text-align: center;
   margin: 15% 1% 1% 4%;
-  background: yellow;
+  background: yellow;*/
 }
 
 .hidden1 {
