@@ -435,11 +435,12 @@ button.sendComment {
 }
 
 .delComment {
+  clear: both;  
   width: 1%;
   float: right;
-  clear: both;
 }
 
 button.delBtn {
+  /*clear: both;*/
   width: 5%;
 }
