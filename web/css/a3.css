@@ -109,7 +109,8 @@ div.rbItem {
 
 div.infoDiv {
   margin: 15% 1% 1% 4%;
-  background: yellow;
+  background: purple;
+  width: 15%;
   font-family: Verdana;
   text-align: center;    
   /*width: 70%;
