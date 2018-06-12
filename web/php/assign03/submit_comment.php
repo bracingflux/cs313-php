@@ -28,10 +28,28 @@
 			$stmt->execute(array(':id' => $newId));
 			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-			foreach ($rows as $row) {
+			foreach ($rows as $row) {			
+				$time = strtotime($row['timestamp']);
+				// if ($saved_id == $row['id']) {
+				$time2 = $row['timestamp'];
+				$query2 = 'SELECT id FROM comments WHERE timestamp =:ctime';
+				$statement2 = $db->prepare($query2);
+				$statement2->bindValue(":ctime", $time2);
+				$statement2->execute();
+				$row2 = $statement2->fetch();
+
+				echo  "<div id='p" . $row2['id'] . "' class='container_message darker'><p>" . $row['text'] . "\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-left'>" . date("h:i A", $time) . "</span>" . "</p><p class='delComment'><form class='deleteComment'><button type='submit' class='w3-btn w3-red w3-small delBtn'><i class='material-icons'>delete</i></button>
+					<input type='hidden' class='hidden1' name='comment' value=\"" . $row2['id'] . "\"></form></p></div>";
+
+				// }
+				// else {
+				// 	echo  "<div class='container_message'><p>" . $row['text'] . "\n\n-" . $row['display_name'] . "<span class='time-right'>" . date("h:i A", $time) . "</span>" . "</p></div>";
+				// }			
+			}
+			/*foreach ($rows as $row) {
 					$time = strtotime($row['timestamp']);
 					echo  "<div class='container_message darker'><p>" . $row['text'] . "\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-left'>" . date("h:i A", $time) . "</span>" . "</p></div>";
-				}	
+				}*/	
 		}
 		catch(Exception $ex) {
 			echo "There was an error.";

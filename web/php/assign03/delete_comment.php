@@ -4,7 +4,6 @@
 
 	if (isset($_POST)) {
 		$id = $_POST['comment'];
-		// echo "This is the comment id: $id";
 		try {
 			$query = 'DELETE FROM comments WHERE id=:id';
 			$statement = $db->prepare($query);
