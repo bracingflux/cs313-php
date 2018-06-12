@@ -139,13 +139,13 @@ button.view_rb {
 .fa-facebook {
   background: #3B5998;
   color: white;
-  /*width: 50px;*/
+  width: 45px;
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
-  /*width: 50px;*/
+  width: 45px;
   /*height: 80px;*/
 }
 
@@ -386,7 +386,7 @@ button.log-click {
 
 #cont-1 {
 	background-color: #f1f1f1;
-  min-height: 70px;
+  min-height: 80px;
 }
 
 #current_user {
