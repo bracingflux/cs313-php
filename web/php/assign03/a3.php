@@ -12,6 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
 	<link rel="stylesheet" href="/resources/demos/style.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -47,7 +50,7 @@
 
 		<!-- <button type="" class='btnRemove'><i class='fa fa-trash-o'></i></button> -->
 		<p><button class="w3-btn w3-orange w3-xlarge">Button<i class="material-icons">delete</i></button></p>
-		
+
 	</div>
 
 	<div id="dialog-form" title="Soda Info">
