@@ -26,7 +26,6 @@ img.center {
 }
 
 p.def {
-  background: blue;
 	color: white;
 	/*margin: 1% 0 1% 35%;*/
   margin-left: 28%;
@@ -388,6 +387,7 @@ button.btnRemove {
 button.log-click {
 	float: left;
 	margin: 1% 0 2% 1%;
+  /*padding-top: 25px;*/
 	border-radius: 3px;	
 }
 
@@ -456,4 +456,10 @@ button.delBtn {
 
 .material-icons {
   float: left;
+}
+
+span.socialButtons {
+  display: inline; 
+  float: left; 
+  margin-left: 25%;
 }
