@@ -28,7 +28,7 @@
 	<title>Root Beer Revelry</title>	
 </head>
 <body>
-<span style="float: right;">
+<span style="float: right; width: 10%; background: orange;">
 	<a href="https://www.facebook.com/Root-Beer-Revelry-181821778540286/" target="_blank" class="fa fa-facebook" id="shadow"></a>
 	<a href="https://twitter.com/rootbeerrevelry?lang=en" class="fa fa-twitter" target="_blank" id="shadow"></a>
 </span>
