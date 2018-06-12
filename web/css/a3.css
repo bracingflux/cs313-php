@@ -91,7 +91,7 @@ div.rbItem {
 	max-height: 180px;
 	max-width: 70px;
 	float: left;
-	margin: 1% 12% 2% 3%;
+	margin: 1% 1% 2% 3%;
 }
 
 #rbName {
@@ -108,9 +108,9 @@ div.rbItem {
 }
 
 div.infoDiv {
-  margin: 15% 1% 1% 4%;
+  margin: 15% 1% 1% 2%;
   background: purple;
-  width: 60%;
+  width: 80%;
   font-family: Verdana;
   text-align: center;    
   /*width: 70%;
