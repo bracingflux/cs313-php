@@ -36,7 +36,8 @@
 
 		if (count($comment_rows) > 0) {
 			echo "<p>Comments:\n</p>";
-			$time2 = $row['timestamp'];			
+			$time2 = $row['timestamp'];
+			echo "<h1>$time2</h1>";			
 
 			$query2 = 'SELECT c.id FROM comments c INNER JOIN root_beers rb ON c.root_beer_id = rb.id INNER JOIN users u ON c.user_id = u.id WHERE c.timestamp =:ctime';
 			$statement2 = $db->prepare($query2);
