@@ -122,7 +122,9 @@ div.rbItem {
 
 button.view_rb {
 	background: #ececec;
-  float right;
+  /*float right;*/
+  clear: both;
+  margin-left: 50%;
 }
 
 
