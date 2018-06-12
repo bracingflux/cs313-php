@@ -7,16 +7,12 @@
 		$password = htmlspecialchars($_POST["password"]);
 		$hashPassword = password_hash($password, PASSWORD_DEFAULT);		
 		$displayName = htmlspecialchars($_POST["displayName"]);
-		// echo "1. $username";
-		// echo " 2. $password";
-		// echo " 3. $displayName";
 		$isUser = false;		
 
 		try {
 			$stmt = $db->prepare('SELECT id, display_name FROM users WHERE username=:username AND password=:password');
 			$stmt->execute(array(':username' => $username, ':password' => $password));
 			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-			//this may fail before it can even do the count check
 			if (count($rows) > 0) {
 				foreach ($rows as $row) {
 					$isUser = true;

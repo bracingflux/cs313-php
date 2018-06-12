@@ -16,7 +16,6 @@
 			if (password_verify($password, $row['password'])) {
 		       $_SESSION["userId"] = $row['id'];
 		       echo $row['display_name'];								
-		       	// header("Location: welcome.php");			
 			}
 			else {
 				echo "Invalid credentials -1";
@@ -26,19 +25,7 @@
 			echo "Failure to connect to database.";
 		}
 		   die();
-
-		/*$stmt = $db->prepare('SELECT id, display_name FROM users WHERE username=:username AND password=:password');
-		$stmt->execute(array(':username' => $username, ':password' => $password));
-		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		if (count($rows) > 0) {
-			foreach ($rows as $row) {
-				echo $row['display_name'];
-				$_SESSION["userId"] = $row['id'];
-			}
-		}
-		else {
-			echo "-1";
-		}*/
+		
 	}
 	else {
 		echo "POST not set..";
