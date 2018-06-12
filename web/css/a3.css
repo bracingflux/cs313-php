@@ -122,6 +122,7 @@ div.rbItem {
 
 button.view_rb {
 	background: #ececec;
+  float right;
 }
 
 
