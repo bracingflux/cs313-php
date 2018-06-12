@@ -95,14 +95,24 @@ div.rbItem {
 }
 
 #rbName {
-	width: 70%;
+	/*width: 70%;
 	float: right;
 	color: white;
 	font-size: 1.1em;
 	font-family: Verdana;
 	text-align: center;
-	margin: 25% 1%;
+	margin: 25% 1%;*/
 	/*clear: both;*/
+}
+
+div.div1 {
+  width: 70%;
+  float: right;
+  color: white;
+  font-size: 1.1em;
+  font-family: Verdana;
+  text-align: center;
+  margin: 25% 1%;
 }
 
 .hidden1 {
@@ -123,8 +133,8 @@ div.rbItem {
 button.view_rb {
 	background: #ececec;
   /*float right;*/
-  clear: both;
-  margin-left: 50%;
+  /*clear: both;*/
+  /*margin-left: 50%;*/
 }
 
 

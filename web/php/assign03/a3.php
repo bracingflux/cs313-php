@@ -127,10 +127,10 @@
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
 		echo "<div class='rbItem'><img src=\"../../photos/rbs/" . $row['name'] . ".png\" id='rbPhoto' alt='" . $row['name'] . "'>";
-		echo "<p id='rbName'>" . $row['name'] ."</p>";
+		echo "<div id='div1'><p id='rbName'>" . $row['name'] ."</p>";
 		echo "<form class='rbForm'>";
 		echo "<button type='submit' class='view_rb'>More info</button>";
-		echo "<input type='hidden' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></form></div>";
+		echo "<input type='hidden' class='hidden1' name='rb' value=\"" . $row['name'] . "\"></form></div></div>";
 	}		
 	?>
 </body>
