@@ -179,11 +179,8 @@ $(function () {
     // e.preventDefault();
     // e.stopImmediatePropagation();
     var user = $('#current_user').text();
+    var num
     if (user) {
-      // document.getElementById('commentEmpty').style.display = 'none';       
-      // var $form = $(this);
-      // var $inputs = $form.find("input, select, button, textarea");
-      // var serializedData = $form.serialize();
       
       $.ajax({  
         type: 'post',
@@ -192,12 +189,6 @@ $(function () {
         success: function (response) {
           $('#current_user').text('');
           $('#id01').hide();
-          // var info = $('#loaded_rb').html();
-          // info = info + response;
-          // alert(info);
-          // $('#loaded_rb').html(info); 
-          // $("#loaded_rb").load(location.href + " #loaded_rb");        
-          // $('#loaded_rb').text(response);
         },
         complete: function () {
           // $('.loader').hide();
@@ -206,15 +197,7 @@ $(function () {
     }
     else {
       // alert("No user currently logged in");
-    }
-    // var comment = document.getElementById('commentText').value;
-    // if (comment) {
-      
-    // }
-    // else {
-      // document.getElementById('commentEmpty').style.display = 'block'; 
-    // }    
-    
+    }  
 
   });
 
