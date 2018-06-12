@@ -45,8 +45,9 @@
 		<button class="log-click" onclick="document.getElementById('id01').style.display='block'">Login</button>						
 		<p class="def">rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.</p>
 
-		<button class='btnRemove'><i class='fa fa-trash-o'></i></button>
-
+		<!-- <button type="" class='btnRemove'><i class='fa fa-trash-o'></i></button> -->
+		<p><button class="w3-btn w3-orange w3-xlarge">Button<i class="material-icons">delete</i></button></p>
+		
 	</div>
 
 	<div id="dialog-form" title="Soda Info">
