@@ -48,8 +48,6 @@
 		<button class="log-click" onclick="document.getElementById('id01').style.display='block'">Login</button>						
 		<p class="def">rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.</p>
 
-		<p><button class="w3-btn w3-red w3-small"><i class="material-icons">delete</i></button></p>
-
 	</div>
 
 	<div id="dialog-form" title="Soda Info">
@@ -112,7 +110,8 @@
 	<!-- <form class='commentSubmit'><textarea name='comment' class='comment_box' placeholder='Enter your comment here'></textarea><button type='submit'>Send Comment</button></form>; -->
 	
 
-
+		<p><button class="w3-btn w3-red w3-small"><i class="material-icons">delete</i></button></p>
+	
 	<?php	
 
 	foreach ($db->query('SELECT name FROM root_beers') as $row) {
