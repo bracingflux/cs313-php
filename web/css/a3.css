@@ -28,7 +28,7 @@ img.center {
 p.def {
 	color: white;
 	/*margin: 1% 0 1% 35%;*/
-  margin-left: 28%;
+  margin-left: 26%;
   width: 30%;
   float: left;
 	font-size: .85em;
@@ -461,6 +461,6 @@ button.delBtn {
 span.socialButtons {
   display: inline; 
   float: left; 
-  margin-left: 27%;
+  margin-left: 25%;
   margin-right: 1%;
 }
