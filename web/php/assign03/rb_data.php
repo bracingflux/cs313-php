@@ -41,7 +41,7 @@
 				$time = strtotime($row['timestamp']);
 				if ($saved_id == $row['id']) {
 					$time2 = $row['timestamp'];
-					$query2 = 'SELECT c.id FROM comments c INNER JOIN root_beers rb ON c.root_beer_id = rb.id INNER JOIN users u ON c.user_id = u.id WHERE c.timestamp =:ctime';
+					$query2 = 'SELECT id FROM comments WHERE timestamp =:ctime';
 					$statement2 = $db->prepare($query2);
 					$statement2->bindValue(":ctime", $time2);
 					$statement2->execute();
