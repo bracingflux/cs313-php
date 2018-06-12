@@ -68,7 +68,7 @@
 
 	    <div class="container" id="cont-1">
 	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-	      <button type="button" name="signUp" onclick="showSignUp()" id="signOffbtn" class='cancelbtn'>Log off</button> <!-- document.getElementById('id01').style.display='none' -->	      	      
+	      <button type="button" name="logOff" id="signOffbtn" class='cancelbtn'>Log off</button> <!-- onclick="showSignUp()" --> <!-- document.getElementById('id01').style.display='none' -->	      	    
 	      <button type="button" name="signUp" onclick="showSignUp()" id="registerbtn" class='cancelbtn'>Sign Up</button> <!-- document.getElementById('id01').style.display='none' -->	      
 	    </div>	    
 	  </form>
