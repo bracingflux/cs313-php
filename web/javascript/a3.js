@@ -177,9 +177,8 @@ $(function () {
   $('#signOffbtn').on('click', function (e) {
 
     e.preventDefault();
-    // e.stopImmediatePropagation();
+    e.stopImmediatePropagation();
     var user = $('#current_user').text();
-    // alert("user: " + user);
     if (user) {
       // document.getElementById('commentEmpty').style.display = 'none';       
       // var $form = $(this);
