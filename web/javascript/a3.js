@@ -179,7 +179,7 @@ $(function () {
     e.preventDefault();
     // e.stopImmediatePropagation();
     var user = $('#current_user').text();
-    alert("user: " + user);
+    // alert("user: " + user);
     if (user) {
       // document.getElementById('commentEmpty').style.display = 'none';       
       // var $form = $(this);
@@ -193,6 +193,7 @@ $(function () {
         success: function (response) {
           alert(response);
           $('#current_user').text('');
+          $('#id01').hide();
           // var info = $('#loaded_rb').html();
           // info = info + response;
           // alert(info);
