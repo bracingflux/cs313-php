@@ -443,7 +443,7 @@ button.sendComment {
 button.delBtn {
   /*clear: both;*/
   max-width: 50px;
-  max-height: 30px;
+  max-height: 40px;
 }
 
 .material-icons {
