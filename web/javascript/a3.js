@@ -191,8 +191,8 @@ $(function () {
         }
         else {
           var pId = response;
+          alert(pId);                    
           $('#' + pId).hide();
-          alert(response);
         }
         // $('#loaded_rb').text(response);
         // $('.loader').hide();                

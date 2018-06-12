@@ -47,7 +47,7 @@
 					$statement2->execute();
 					$row2 = $statement2->fetch();
 
-					echo  "<div class='container_message darker'><p>" . $row['text'] . "\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-left'>" . date("h:i A", $time) . "</span>" . "</p><p id='p" . $row2['id'] . "' class='delComment'><form class='deleteComment'><button type='submit' class='w3-btn w3-red w3-small delBtn'><i class='material-icons'>delete</i></button>
+					echo  "<div id='p" . $row2['id'] . "' class='container_message darker'><p>" . $row['text'] . "\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-left'>" . date("h:i A", $time) . "</span>" . "</p><p class='delComment'><form class='deleteComment'><button type='submit' class='w3-btn w3-red w3-small delBtn'><i class='material-icons'>delete</i></button>
 						<input type='hidden' class='hidden1' name='comment' value=\"" . $row2['id'] . "\"></form></p></div>";
 
 				}
