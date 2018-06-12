@@ -442,8 +442,8 @@ button.sendComment {
 
 button.delBtn {
   /*clear: both;*/
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 50px;
+  max-height: 30px;
 }
 
 .material-icons {
