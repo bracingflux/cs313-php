@@ -139,11 +139,13 @@ button.view_rb {
 .fa-facebook {
   background: #3B5998;
   color: white;
+  width: 50px;
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
+  width: 50px;
 }
 
 #shadow {
