@@ -176,8 +176,8 @@ $(function () {
 
   $('#signOffbtn').on('click', function (e) {
 
-    e.preventDefault();
-    e.stopImmediatePropagation();
+    // e.preventDefault();
+    // e.stopImmediatePropagation();
     var user = $('#current_user').text();
     if (user) {
       // document.getElementById('commentEmpty').style.display = 'none';       
@@ -190,7 +190,6 @@ $(function () {
         url: 'logout_user.php',
         // data: serializedData,
         success: function (response) {
-          alert(response);
           $('#current_user').text('');
           $('#id01').hide();
           // var info = $('#loaded_rb').html();
@@ -206,7 +205,7 @@ $(function () {
       });
     }
     else {
-      alert("No user currently logged in");
+      // alert("No user currently logged in");
     }
     // var comment = document.getElementById('commentText').value;
     // if (comment) {
