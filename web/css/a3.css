@@ -95,6 +95,7 @@ div.rbItem {
 }
 
 #rbName {
+  color: white;
 	/*width: 70%;
 	float: right;
 	color: white;
@@ -112,7 +113,7 @@ div.div1 {
   font-size: 1.1em;
   font-family: Verdana;
   text-align: center;
-  margin: 25% 1%;
+  margin: 15% 1% 1% 4%;
 }
 
 .hidden1 {
