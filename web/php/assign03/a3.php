@@ -51,7 +51,7 @@
 			}			  
 		?>			
 		</p>	
-		<button class="log-click" onclick="document.getElementById('id01').style.display='block'">Login</button>						
+		<button class="log-click" onclick="document.getElementById('id01').style.display='block'">Sign Up/In</button>						
 		<p class="def">rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.</p>
 		<span class="socialButtons">
 			<a href="https://www.facebook.com/Root-Beer-Revelry-181821778540286/" target="_blank" class="fa fa-facebook" id="shadow"></a>
