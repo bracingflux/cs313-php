@@ -442,5 +442,6 @@ button.sendComment {
 
 button.delBtn {
   /*clear: both;*/
-  width: 10px;
+  width: 15px;
+  height: 15px;
 }
