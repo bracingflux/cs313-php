@@ -49,7 +49,7 @@
 		<p class="def">rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.</p>
 
 		<!-- <button type="" class='btnRemove'><i class='fa fa-trash-o'></i></button> -->
-		<p><button class="">Delete<i class="material-icons">delete</i></button></p>
+		<p><button class=""><i class="material-icons">delete</i></button></p>
 
 	</div>
 
