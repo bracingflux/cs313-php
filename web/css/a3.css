@@ -28,7 +28,8 @@ img.center {
 p.def {
 	color: white;
 	/*margin: 1% 0 1% 35%;*/
-  margin-left: 30%;
+  margin-left: 25%;
+  margin-right: 25%;
   width: 35%;
   float: left;
 	font-size: .85em;
