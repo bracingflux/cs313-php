@@ -321,6 +321,12 @@ button:hover {
     float: right;    
 }
 
+#signOffbtn {
+    background-color: #edf155;
+    float: right;
+    margin-left: 2%;     
+}
+
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
