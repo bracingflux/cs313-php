@@ -36,12 +36,14 @@
 
 		if (count($comment_rows) > 0) {
 			echo "<p>Comments:\n</p>";
+			$time2 = $row['timestamp'];			
 
-			$query2 = 'SELECT c.id FROM comments c INNER JOIN root_beers rb ON c.root_beer_id = rb.id INNER JOIN users u ON c.user_id = u.id WHERE rb.id =:id';
+			$query2 = 'SELECT c.id FROM comments c INNER JOIN root_beers rb ON c.root_beer_id = rb.id INNER JOIN users u ON c.user_id = u.id WHERE c.timestamp =:ctime';
 			$statement2 = $db->prepare($query2);
-			$statement2->bindValue(":id", $id);
+			$statement2->bindValue(":ctime", $time2);
 			$statement2->execute();
 			$row2 = $statement2->fetch();
+			echo "<h1>" . $row2['id'] . "</h1>";
 
 			foreach ($comment_rows as $row) {			
 				$time = strtotime($row['timestamp']);
