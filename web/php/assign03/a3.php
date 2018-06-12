@@ -113,7 +113,7 @@
 	<!-- <form class='commentSubmit'><textarea name='comment' class='comment_box' placeholder='Enter your comment here'></textarea><button type='submit'>Send Comment</button></form>; -->
 	
 
-		<p><button class="w3-btn w3-red w3-small"><i class="material-icons">delete</i></button></p>
+		<!-- <p><button class="w3-btn w3-red w3-small"><i class="material-icons">delete</i></button></p> -->
 
 	<?php	
 

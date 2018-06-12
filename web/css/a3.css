@@ -429,13 +429,14 @@ button.sendComment {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px 25%;
   border: none;
   cursor: pointer;  
 }
 
 .delComment {
-  clear: both;  
+  clear: both; 
+  margin: 1% 0; 
   /*width: 1%;*/
   /*float: right;*/
 }
