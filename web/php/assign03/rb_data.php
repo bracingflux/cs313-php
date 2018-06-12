@@ -39,7 +39,7 @@
 			foreach ($comment_rows as $row) {			
 				$time = strtotime($row['timestamp']);
 				if ($saved_id == $row['id']) {
-					echo  "<div class='container_message darker'><p>" . $row['text'] . "\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-left'>" . date("h:i A", $time) . "</span>" . "</p><p><button class='w3-btn w3-red w3-small'><i class='material-icons'>delete</i></button></p></div>"; /*<button class='btnRemove'><i class='fa fa-trash'></i>Trash</button>*/		
+					echo  "<div class='container_message darker'><p>" . $row['text'] . "\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-left'>" . date("h:i A", $time) . "</span>" . "</p><p class='delComment'><button class='w3-btn w3-red w3-small'><i class='material-icons'>delete</i></button></p></div>"; /*<button class='btnRemove'><i class='fa fa-trash'></i>Trash</button>*/		
 
 				}
 				else {

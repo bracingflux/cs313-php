@@ -433,3 +433,8 @@ button.sendComment {
   border: none;
   cursor: pointer;  
 }
+
+.delComment {
+  width: 10%;
+  float: right;
+}
