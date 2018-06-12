@@ -1,8 +1,7 @@
 <?php  
 	if (isset($_POST)) {
-		foreach ($_POST as $key => $value) {
-			echo "$key $value<br>";
-		}
+		$id = $_POST['comment'];
+		echo "This is the comment id: $id";		
 	}
 	else {
 		echo "Post not set.";
