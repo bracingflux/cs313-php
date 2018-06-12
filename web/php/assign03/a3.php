@@ -48,8 +48,7 @@
 		<button class="log-click" onclick="document.getElementById('id01').style.display='block'">Login</button>						
 		<p class="def">rev·el·ry \'re-vəl-rē\ • n. pl. rev·el·ries • Boisterous merrymaking.</p>
 
-		<p><button type="" class='btnRemove'><i class='fa fa-trash-o'></i></button></p>
-		<!-- <p><button class=""><i class="material-icons">delete</i></button></p> -->
+		<p><button class="w3-btn w3-red w3-xlarge"><i class="material-icons">delete</i></button></p>
 
 	</div>
 
