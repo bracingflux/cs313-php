@@ -461,5 +461,6 @@ button.delBtn {
 span.socialButtons {
   display: inline; 
   float: left; 
-  margin-left: 28%;
+  margin-left: 27%;
+  margin-right: 1%;
 }
