@@ -180,14 +180,20 @@ $(function () {
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
-    alert("data serialized");
-    
+
     $.ajax({  
       type: 'post',
       url: 'delete_comment.php',
       data: serializedData,
       success: function (response) {
-        alert(response);
+        if (response.includes("Failure")) {
+          alert(response);          
+        }
+        else {
+          var pId = response;
+          $('#' + pId).hide();
+          alert(response);
+        }
         // $('#loaded_rb').text(response);
         // $('.loader').hide();                
         // $('#loaded_rb').html(response);
