@@ -36,10 +36,20 @@
 
 		if (count($comment_rows) > 0) {
 			echo "<p>Comments:\n</p>";
+
+			$query2 = 'SELECT c.id FROM comments c INNER JOIN root_beers rb ON c.root_beer_id = rb.id INNER JOIN users u ON c.user_id = u.id WHERE rb.id =:id';
+			$statement2 = $db->prepare($query2);
+			$statement2->bindValue(":id", $id);
+			$statement2->execute();
+			$row2 = $statement2->fetch();
+
 			foreach ($comment_rows as $row) {			
 				$time = strtotime($row['timestamp']);
 				if ($saved_id == $row['id']) {
-					echo  "<div class='container_message darker'><p>" . $row['text'] . "\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-left'>" . date("h:i A", $time) . "</span>" . "</p><p class='delComment'><button class='w3-btn w3-red w3-small delBtn'><i class='material-icons'>delete</i></button></p></div>"; /*<button class='btnRemove'><i class='fa fa-trash'></i>Trash</button>*/		
+					echo  "<div class='container_message darker'><p>" . $row['text'] . "\n\n<span style='float: right;'>-" . $row['display_name'] . "</span><span class='time-left'>" . date("h:i A", $time) . "</span>" . "</p><p class='delComment'><form class='.deleteComment'><button type='submit' class='w3-btn w3-red w3-small delBtn'><i class='material-icons'>delete</i></button>
+						<input type='hidden' class='hidden1' name='rb' value=\"" . $row2['id'] . "\"></form></p></div>";
+
+					// echo "</p></div>"; <button class='btnRemove'><i class='fa fa-trash'></i>Trash</button>		
 
 				}
 				else {

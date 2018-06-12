@@ -171,6 +171,34 @@ $(function () {
 
 });
 
+$(function () {
+
+  $('.deleteComment').on('submit', function (e) {
+
+    e.preventDefault();
+    var $form = $(this);
+    var $inputs = $form.find("input, select, button, textarea");
+    var serializedData = $form.serialize();
+    
+    $.ajax({  
+      type: 'post',
+      url: 'delete_comment.php',
+      data: serializedData,
+      success: function (response) {
+        alert(response);
+        // $('#loaded_rb').text(response);
+        // $('.loader').hide();                
+        // $('#loaded_rb').html(response);
+      },
+      complete: function () {
+        // $('.loader').hide();
+      }             
+    });
+
+  });
+
+});
+
 var modal = document.getElementById('id01');
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
