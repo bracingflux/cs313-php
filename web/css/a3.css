@@ -436,12 +436,12 @@ button.sendComment {
 
 .delComment {
   /*clear: both;  */
-  width: 1%;
+  /*width: 1%;*/
   /*float: right;*/
 }
 
 button.delBtn {
   /*clear: both;*/
-  width: 15px;
-  height: 15px;
+  max-width: 30px;
+  max-height: 30px;
 }
